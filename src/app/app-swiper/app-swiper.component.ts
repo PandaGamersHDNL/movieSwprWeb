@@ -7,26 +7,35 @@ import { environment } from 'src/environments/environment';
   styleUrls: ['./app-swiper.component.css']
 })
 export class AppSwiperComponent implements OnInit {
-  private title = "undefined";
+  public tvInfo: TvInfo;
   constructor() {
-
+    this.tvInfo = {
+      title: null,
+      plot: null,
+      type: null,
+      errorMessage: null
+    };
   }
 
   async ngOnInit(): Promise<void> {
-    let info: TvInfo = {
-      title: null,
-      plot: null,
-      type: null
-    };
-    while (!info.title){
-      console.log("beep");
-    
-      info = await getIdInfo(genTitleId());
-    }
-    console.log(info.type);
+    this.tvInfo = await genCheckedInfo();
     
   }
 
+}
+
+async function genCheckedInfo() {
+  let tvInfo: TvInfo | undefined = undefined;
+ do {
+    const id = genTitleId()
+    if(checkOverlap(id)){
+      tvInfo = await getIdInfo(id);
+      console.log(tvInfo.errorMessage);
+      console.log(tvInfo.errorMessage?.match("Maximum usage"));
+      
+    }
+  }  while (tvInfo == undefined || (tvInfo.errorMessage?.match("Maximum usage") == null && (!tvInfo.title || tvInfo.type == "TVEpisode" )))
+  return tvInfo;
 }
 
 function genTitleId(): string {
@@ -56,14 +65,16 @@ async function getIdInfo(id: string): Promise<TvInfo> {
 }
 
 //checks db for overlapping ids 
-function checkOverlap(id: string) {
-
+function checkOverlap(id: string): boolean {
+  //TODO
+  return true;
 }
 
 //request return object
 interface TvInfo {
   "title": string | null,
   "plot": string | null,
-  "type": string | null
+  "type": string | null,
+  "errorMessage": null | string
 }
 
