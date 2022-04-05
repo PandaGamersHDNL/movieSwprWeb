@@ -1,0 +1,181 @@
+
+
+:root {
+    --fontSize: 32px;
+    font-size: var(--fontSize);
+    box-sizing: border-box;
+    --NavBackground: #7289DA;
+    --HoverColorP: #089EAC;
+    --HoverColorS: #40444B;
+    --Textcolor: white;
+    --BodyBackground: #202225;
+    --HighlightColor: #EF4A25;
+    --BoxBackground: #292B2F;
+}
+
+body {
+    background-color: var(--BodyBackground);
+    max-width: 100%;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    min-width: 25em;
+}
+
+footer {
+    font-size: .5em;
+    bottom: 0;
+    width: 100%;
+    color: var(--Textcolor);
+    position: fixed;
+    background-color: var(--NavBackground);
+    padding: .5em;
+}
+
+nav {
+    background-color: var(--NavBackground);
+    display: block;
+}
+
+nav a {
+    color: var(--Textcolor);
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.5em;
+    margin: 0;
+    padding: calc(var(--fontSize)/4) calc(var(--fontSize)/8);
+}
+
+nav>ul>li:hover {
+    background-color: var(--HoverColorP);
+}
+
+nav>ul>li>ul>li>a:hover {
+    background-color: var(--HoverColorS);
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+    height: 100%;
+}
+
+#DropDown {
+    display: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    height: 100%;
+    width: max-content;
+    z-index: 1;
+}
+
+#Projects:hover ul#DropDown {
+    display: block;
+    width: 100%;
+}
+
+header>nav>ul>li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+header>nav>ul>li>a {
+    display: block;
+    height: 100%;
+    text-align: center;
+}
+
+nav>ul>li>ul>li {
+    background-color: var(--HoverColorP);
+    position: relative;
+    /*transition: all linear 0.1s;*/
+}
+
+nav>ul>li>ul>li>a {
+    display: block;
+    text-align: left;
+    width: fill;
+    font-size: 1.25em;
+    line-height: 1.6em;
+}
+
+nav>ul>li>ul {
+    position: absolute;
+    overflow: visible;
+}
+
+nav a.active {
+    color: var(--HighlightColor);
+}
+
+.siteBody {
+    color: var(--Textcolor);
+}
+
+.homeBox {
+    width: 30em;
+    max-width: 70%;
+    min-width: 25em;
+    display: block;
+    border-radius: 1%;
+    background-color: var(--BoxBackground);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    padding: 1%;
+    overflow: auto;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    height: auto;
+}
+
+.homeBox ul {
+    align-content: left;
+    margin: 5px;
+    text-align: left;
+    list-style-position: inside;
+    align-items: flex-start;
+}
+
+.homeBox li {
+    margin: 5px;
+}
+
+img {
+    float: right;
+    height: 250px;
+    width: 250px;
+    display: block;
+}
+
+header::after {
+    font-size: 1em;
+}
