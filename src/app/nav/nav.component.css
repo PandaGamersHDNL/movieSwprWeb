@@ -1,18 +1,3 @@
-
-
-:root {
-    --fontSize: 32px;
-    font-size: var(--fontSize);
-    box-sizing: border-box;
-    --NavBackground: #7289DA;
-    --HoverColorP: #089EAC;
-    --HoverColorS: #40444B;
-    --Textcolor: white;
-    --BodyBackground: #202225;
-    --HighlightColor: #EF4A25;
-    --BoxBackground: #292B2F;
-}
-
 body {
     background-color: var(--BodyBackground);
     max-width: 100%;
@@ -105,7 +90,7 @@ nav>ul>li>ul>li {
 nav>ul>li>ul>li>a {
     display: block;
     text-align: left;
-    width: fill;
+    width: stretch;
     font-size: 1.25em;
     line-height: 1.6em;
 }
@@ -167,13 +152,6 @@ p {
 
 .homeBox li {
     margin: 5px;
-}
-
-img {
-    float: right;
-    height: 250px;
-    width: 250px;
-    display: block;
 }
 
 header::after {

@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --fontSize: 32px;
+    font-size: var(--fontSize);
+    box-sizing: border-box;
+    --NavBackground: #7289DA;
+    --HoverColorP: #089EAC;
+    --HoverColorS: #40444B;
+    --Textcolor: white;
+    --BodyBackground: #202225;
+    --HighlightColor: #EF4A25;
+    --BoxBackground: #292B2F;
+}
+
+html{
+    background-color: gray;
+}

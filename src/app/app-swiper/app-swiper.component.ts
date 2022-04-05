@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
+import dummyData from 'src/dummydata.json'
 
 @Component({
   selector: 'app-swiper',
@@ -14,7 +15,7 @@ export class AppSwiperComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     //this.tvInfo = await genCheckedInfo();
-   
+    this.tvInfo = dummyData[1] as unknown as TvInfo;
   }
 
 }
