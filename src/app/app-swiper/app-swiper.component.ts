@@ -9,37 +9,34 @@ import { environment } from 'src/environments/environment';
 export class AppSwiperComponent implements OnInit {
   public tvInfo: TvInfo;
   constructor() {
-    this.tvInfo = {
-      title: null,
-      plot: null,
-      type: null,
-      errorMessage: null
-    };
+    this.tvInfo = {}
   }
 
   async ngOnInit(): Promise<void> {
-    this.tvInfo = await genCheckedInfo();
-    
+    //this.tvInfo = await genCheckedInfo();
+   
   }
 
 }
 
 async function genCheckedInfo() {
   let tvInfo: TvInfo | undefined = undefined;
- do {
+  do {
     const id = genTitleId()
-    if(checkOverlap(id)){
+    if (checkOverlap(id)) {
       tvInfo = await getIdInfo(id);
       console.log(tvInfo.errorMessage);
       console.log(tvInfo.errorMessage?.match("Maximum usage"));
-      
+      if (tvInfo.errorMessage?.match("Maximum usage") != null) {
+        throw new Error("maximum usage reached")
+      }
     }
-  }  while (tvInfo == undefined || (tvInfo.errorMessage?.match("Maximum usage") == null && (!tvInfo.title || tvInfo.type == "TVEpisode" )))
+  } while (tvInfo == undefined || !tvInfo.title || tvInfo.type == "TVEpisode")
   return tvInfo;
 }
 
 function genTitleId(): string {
-  //valid ids start with tt
+  //valid ids start with tt and has 7digits
   let id = "tt";
   for (let index = 0; index < 7; index++) {
     id += genDigit()
@@ -58,8 +55,6 @@ async function getIdInfo(id: string): Promise<TvInfo> {
     // the JSON body is taken from the response
     .then(res => res.json())
     .then(res => {
-      // The response has an `any` type, so we need to cast
-      // it to the `User` type, and return it from the promise
       return res as TvInfo;
     })
 }
@@ -72,9 +67,32 @@ function checkOverlap(id: string): boolean {
 
 //request return object
 interface TvInfo {
-  "title": string | null,
-  "plot": string | null,
-  "type": string | null,
-  "errorMessage": null | string
+  id?: string
+  title?: string,
+  tagline?: string,
+  runtimeStr?: string,
+  year?: string,
+  plot?: string,
+  type?: string,
+  errorMessage?: string,
+  image?: string,
+  genres?: string,
+  languages?: string,
+  contentRating?: string,
+  imDbRating?: string
 }
-
+async function genDummyToConsole() {
+  
+  const infos: TvInfo[] = [];
+  try {
+    while (true) {
+      const tvInfo = await genCheckedInfo()
+      infos.push(tvInfo);
+    }
+  } catch {
+    console.log("limit reached");
+  }
+  finally{
+    console.log(infos)
+  }
+}
