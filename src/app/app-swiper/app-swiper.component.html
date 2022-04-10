@@ -1,9 +1,14 @@
 <div>
     <img src={{tvInfo.image}} />
-    <p>T:{{tvInfo.runtimeStr}}&emsp;Y:{{tvInfo.year}}&emsp;rating:{{tvInfo.contentRating}}&emsp;{{tvInfo.imDbRating}}</p>
     <h1>title: {{tvInfo.title}}</h1>
     <p>{{tvInfo.tagline}}</p>
     <p>genres: {{tvInfo.genres}}</p>
     <p>languages: {{tvInfo.languages}}</p>
-    <p>plot: {{tvInfo.plot}}</p>
-</div>
+    <p *ngIf="valPlot()">plot: {{tvInfo.plot}}</p>
+    <p>
+      T:{{tvInfo.runtimeStr}}
+      &emsp;Y:{{tvInfo.year}}&emsp;
+      <span *ngIf="valContentRating()">rating:{{tvInfo.contentRating}}</span>
+      <span *ngIf="valImdbRating()">&emsp;{{tvInfo.imDbRating}}/10</span>
+    </p>
+  </div>

@@ -15,9 +15,18 @@ export class AppSwiperComponent implements OnInit {
 
   async ngOnInit(): Promise<void> {
     //this.tvInfo = await genCheckedInfo();
-    this.tvInfo = dummyData[1] as unknown as TvInfo;
+    this.tvInfo = dummyData[2] as unknown as TvInfo;
+  }
+  public valPlot() {
+    return this.tvInfo.plot ? true : false;
+  }
+  public valImdbRating(){
+    return this.tvInfo.imDbRating ? true : false;
   }
 
+  public valContentRating(){
+    return this.tvInfo.contentRating ? true : false;
+  }
 }
 
 async function genCheckedInfo() {
@@ -60,7 +69,7 @@ async function getIdInfo(id: string): Promise<TvInfo> {
     })
 }
 
-//checks db for overlapping ids 
+//checks db for overlapping ids
 function checkOverlap(id: string): boolean {
   //TODO
   return true;
@@ -83,7 +92,7 @@ interface TvInfo {
   imDbRating?: string
 }
 async function genDummyToConsole() {
-  
+
   const infos: TvInfo[] = [];
   try {
     while (true) {
