@@ -16,11 +16,5 @@ export class DbService {
     return this.http.get<TvInfo[]>(`${this.dbUrl}/data`);
   }
 
-  onGetData(): void{
-    this.getData().subscribe({
-      next: (v) => {console.log(v);this.data = v;},
-      error: (e) => console.error(e),
-      complete: () => console.info('complete')
-  });
-  }
+
 }

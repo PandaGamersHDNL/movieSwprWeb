@@ -1,14 +1,15 @@
 <div>
-    <img src={{tvInfo.image}} />
-    <h1>title: {{tvInfo.title}}</h1>
-    <p>{{tvInfo.tagline}}</p>
-    <p>genres: {{tvInfo.genres}}</p>
-    <p>languages: {{tvInfo.languages}}</p>
-    <p *ngIf="valPlot()">plot: {{tvInfo.plot}}</p>
-    <p>
-      T:{{tvInfo.runtimeStr}}
-      &emsp;Y:{{tvInfo.year}}&emsp;
-      <span *ngIf="valContentRating()">rating:{{tvInfo.contentRating}}</span>
-      <span *ngIf="valImdbRating()">&emsp;{{tvInfo.imDbRating}}/10</span>
-    </p>
-  </div>
+  <img src={{tvInfo.image}} />
+  <h1>{{tvInfo.title}}</h1>
+  <p>{{tvInfo.tagline}}</p>
+  <p><b>genres:</b> {{tvInfo.genres}}</p>
+  <p><b>languages:</b> {{tvInfo.languages}}</p>
+  <p *ngIf="valPlot()"><b>plot:</b> {{tvInfo.plot}}</p>
+  <p>
+    <span *ngIf="valRuntime()"><b>T:</b>{{tvInfo.runtimeStr}}&emsp;</span>
+    <span *ngIf="valYear()"><b>Y:</b>{{tvInfo.year}}&emsp;</span>
+    <span *ngIf="valContentRating()"><b>rating:</b>{{tvInfo.contentRating}}&emsp;</span>
+    <span *ngIf="valImdbRating()">{{tvInfo.imDbRating}}<b>/10</b></span>
+  </p>
+</div>
+<app-buttons></app-buttons>

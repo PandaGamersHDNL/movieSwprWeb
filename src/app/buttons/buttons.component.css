@@ -1,0 +1,11 @@
+p {
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+button {
+  margin: 1em;
+}

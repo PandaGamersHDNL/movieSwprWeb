@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import dummyData from 'src/dummydata.json'
 import { DbService } from '../db.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 
@@ -11,6 +10,7 @@ import { HttpClient, HttpHandler } from '@angular/common/http';
 })
 export class AppSwiperComponent implements OnInit {
   public tvInfo: TvInfo;
+  public data: TvInfo[] = [];
 
   constructor(private db: DbService) {
     this.tvInfo = {}
@@ -18,22 +18,37 @@ export class AppSwiperComponent implements OnInit {
     //this.db = new DbService()
   }
 
+  async onGetData(): Promise<TvInfo[]> {
+    this.db.getData().subscribe({
+      next: (v) => {
+        this.data = v;
+        this.tvInfo = v[genRandomIndex(v.length)];
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+
+    return this.data;
+  }
 
   async ngOnInit(): Promise<void> {
-    //this.tvInfo = await genCheckedInfo();
-    console.log(this.db.onGetData());
-
-    this.tvInfo = dummyData[2] as unknown as TvInfo;
+    this.onGetData();
+  }
+  public valRuntime() {
+    return this.tvInfo.runtimeStr ? true : false;
+  }
+  public valYear() {
+    return this.tvInfo.year ? true : false;
   }
   public valPlot() {
     return this.tvInfo.plot ? true : false;
   }
 
-  public valImdbRating(){
+  public valImdbRating() {
     return this.tvInfo.imDbRating ? true : false;
   }
 
-  public valContentRating(){
+  public valContentRating() {
     return this.tvInfo.contentRating ? true : false;
   }
 }
@@ -58,11 +73,12 @@ function genTitleId(): string {
   //valid ids start with tt and has 7digits
   let id = "tt";
   for (let index = 0; index < 7; index++) {
-    id += genDigit()
+    id += genDigit();
   }
   return id;
 }
 
+//TODO add seed?
 function genDigit(): number {
   return Math.floor(Math.random() * 10);
 }
@@ -100,7 +116,7 @@ export interface TvInfo {
   contentRating?: string,
   imDbRating?: string
 }
-async function genDummyToConsole() {
+async function genDummyToConsole(): Promise<void> {
 
   const infos: TvInfo[] = [];
   try {
@@ -111,7 +127,12 @@ async function genDummyToConsole() {
   } catch {
     console.log("limit reached");
   }
-  finally{
+  finally {
     console.log(infos)
   }
+}
+
+function genRandomIndex(length: number): number {
+  // last index = length - 1
+  return Math.floor(Math.random() * length)
 }
