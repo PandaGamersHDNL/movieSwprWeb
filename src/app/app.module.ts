@@ -5,15 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AppSwiperComponent } from './app-swiper/app-swiper.component';
 import { NavComponent } from './nav/nav.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppSwiperComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
     BrowserModule,
+    //AppSwiperComponent,
+    //NavComponent,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],

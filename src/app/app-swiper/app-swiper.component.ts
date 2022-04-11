@@ -1,25 +1,34 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import dummyData from 'src/dummydata.json'
+import { DbService } from '../db.service';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 
 @Component({
   selector: 'app-swiper',
   templateUrl: './app-swiper.component.html',
-  styleUrls: ['./app-swiper.component.css']
+  styleUrls: ['./app-swiper.component.css'],
 })
 export class AppSwiperComponent implements OnInit {
   public tvInfo: TvInfo;
-  constructor() {
+
+  constructor(private db: DbService) {
     this.tvInfo = {}
+    //const handler = new HttpClient()
+    //this.db = new DbService()
   }
+
 
   async ngOnInit(): Promise<void> {
     //this.tvInfo = await genCheckedInfo();
+    console.log(this.db.onGetData());
+
     this.tvInfo = dummyData[2] as unknown as TvInfo;
   }
   public valPlot() {
     return this.tvInfo.plot ? true : false;
   }
+
   public valImdbRating(){
     return this.tvInfo.imDbRating ? true : false;
   }
@@ -76,7 +85,7 @@ function checkOverlap(id: string): boolean {
 }
 
 //request return object
-interface TvInfo {
+export interface TvInfo {
   id?: string
   title?: string,
   tagline?: string,
