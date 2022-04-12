@@ -16,5 +16,30 @@ export class DbService {
     return this.http.get<TvInfo[]>(`${this.dbUrl}/data`);
   }
 
+  postSeen(data: TvInfo) {
+    console.log("post seen");
+    this.http.post(`${this.dbUrl}/seen`, data).subscribe({
+      error: (e) => {console.log(e);},
+      complete: () => {console.log("post seen complete");}
+      }
+    );
+  }
 
+  postWatch(data: TvInfo) {
+    console.log("post watch");
+    this.http.post(`${this.dbUrl}/watch`, data).subscribe({
+      error: (e) => {console.log(e);},
+      complete: () => {console.log("post complete");}
+      }
+    );
+  }
+
+  postData(data: TvInfo) {
+    console.log("post watch");
+    this.http.post(`${this.dbUrl}/data`, data).subscribe({
+      error: (e) => {console.log(e);},
+      complete: () => {console.log("post complete");}
+      }
+    );
+  }
 }

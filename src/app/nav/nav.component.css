@@ -49,6 +49,7 @@ nav>ul {
     justify-content: space-evenly;
     list-style: none;
     height: 100%;
+    margin: 0;
 }
 
 #DropDown {

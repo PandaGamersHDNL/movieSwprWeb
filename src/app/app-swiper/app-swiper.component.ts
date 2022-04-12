@@ -12,6 +12,9 @@ import { EventButtons } from '../buttons/buttons.component';
 export class AppSwiperComponent implements OnInit {
   public tvInfo: TvInfo;
   public data: TvInfo[] = [];
+  public seen: TvInfo[] = [];
+  public watch: TvInfo[] = [];
+  public fav: TvInfo[] = [];
 
   constructor(private db: DbService) {
     this.tvInfo = {}
@@ -53,29 +56,81 @@ export class AppSwiperComponent implements OnInit {
     return this.tvInfo.contentRating ? true : false;
   }
 
-  public buttonClicked(button: EventButtons){
-    switch (button){
+  async buttonClicked(button: EventButtons) {
+    switch (button) {
       case EventButtons.no:
+        this.tvInfo = await this.genCheckedInfo();
+        break;
+      case EventButtons.seen:
+        this.db.postSeen(this.tvInfo);
         this.tvInfo = this.data[genRandomIndex(this.data.length)]
+        break;
+      case EventButtons.watchLater:
+        this.db.postWatch(this.tvInfo);
+        break;
+      default:
+        console.log("sheesh");
+
     }
+  }
+  //checks db for overlapping ids True = not in db
+  checkOverlap(id: string): boolean {
+    // this but then for seen watched and favorite
+    const findTvInfo = (info: TvInfo) => {
+      if (info.id == id)
+        return true;
+      return false;
+    }
+    if (
+      this.seen.find(findTvInfo) == undefined &&
+      this.watch.find(findTvInfo) == undefined &&
+      this.fav.find(findTvInfo) == undefined
+    )
+      return true;
+    else {
+      return false;
+    }
+  }
+  //local db TODO: keep local object so we don't have to wait for db interactions?
+  async genCheckedInfo() {
+    let tvInfo: TvInfo | undefined = undefined;
+    let bNewInfo;
+    do {
+      bNewInfo = false;
+      const id = genTitleId()
+      if (this.checkOverlap(id)) {
+        const findTvInfo = (info: TvInfo) => {
+          if (info.id == id)
+            return true;
+          return false;
+        }
+        tvInfo = this.data.find(findTvInfo);
+        if(!tvInfo) {
+          tvInfo = await this.genCheckedInfoAPI(id);
+          bNewInfo = true;
+        }
+      }
+    } while (tvInfo == undefined || !tvInfo.title || tvInfo.type == "TVEpisode")
+    if (bNewInfo){
+      this.data.push(tvInfo);
+      this.db.postData(tvInfo);
+    }
+    return tvInfo;
+  }
+  //gen with api request
+  async genCheckedInfoAPI(id: string) {
+    let tvInfo: TvInfo | undefined = undefined;
+        tvInfo = await getIdInfo(id);
+        console.log(tvInfo.errorMessage);
+        console.log(tvInfo.errorMessage?.match("Maximum usage"));
+        if (tvInfo.errorMessage?.match("Maximum usage") != null) {
+          throw new Error("maximum usage reached")
+      }
+    return tvInfo;
   }
 }
 
-async function genCheckedInfo() {
-  let tvInfo: TvInfo | undefined = undefined;
-  do {
-    const id = genTitleId()
-    if (checkOverlap(id)) {
-      tvInfo = await getIdInfo(id);
-      console.log(tvInfo.errorMessage);
-      console.log(tvInfo.errorMessage?.match("Maximum usage"));
-      if (tvInfo.errorMessage?.match("Maximum usage") != null) {
-        throw new Error("maximum usage reached")
-      }
-    }
-  } while (tvInfo == undefined || !tvInfo.title || tvInfo.type == "TVEpisode")
-  return tvInfo;
-}
+
 
 function genTitleId(): string {
   //valid ids start with tt and has 7digits
@@ -102,11 +157,6 @@ async function getIdInfo(id: string): Promise<TvInfo> {
     })
 }
 
-//checks db for overlapping ids
-function checkOverlap(id: string): boolean {
-  //TODO
-  return true;
-}
 
 //request return object
 export interface TvInfo {
@@ -124,7 +174,7 @@ export interface TvInfo {
   contentRating?: string,
   imDbRating?: string
 }
-async function genDummyToConsole(): Promise<void> {
+/*async function genDummyToConsole(): Promise<void> {
 
   const infos: TvInfo[] = [];
   try {
@@ -138,9 +188,10 @@ async function genDummyToConsole(): Promise<void> {
   finally {
     console.log(infos)
   }
-}
+}*/
 
 function genRandomIndex(length: number): number {
   // last index = length - 1
   return Math.floor(Math.random() * length)
 }
+

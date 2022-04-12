@@ -13,6 +13,6 @@
     --BoxBackground: #292B2F;
 }
 
-html{
-    background-color: gray;
+body{
+    background-color: var(--BodyBackground);
 }
