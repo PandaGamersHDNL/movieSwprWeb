@@ -59,14 +59,27 @@ export class AppSwiperComponent implements OnInit {
   async buttonClicked(button: EventButtons) {
     switch (button) {
       case EventButtons.no:
+        this.tvInfo = {};
         this.tvInfo = await this.genCheckedInfo();
         break;
-      case EventButtons.seen:
-        this.db.postSeen(this.tvInfo);
-        this.tvInfo = this.data[genRandomIndex(this.data.length)]
+      case EventButtons.seen:{
+        const info = this.tvInfo;
+        this.tvInfo = {};
+        this.db.postSeen(info);
+        this.tvInfo = await this.genCheckedInfo();
+        break;}
+      case EventButtons.watchLater: {
+        const info = this.tvInfo;
+        this.tvInfo = {};
+        this.db.postWatch(info);
+        this.tvInfo = await this.genCheckedInfo();
         break;
-      case EventButtons.watchLater:
-        this.db.postWatch(this.tvInfo);
+      }
+      case EventButtons.favorite:
+        const info = this.tvInfo;
+        this.tvInfo = {};
+        this.db.postFav(info);
+        this.tvInfo = await this.genCheckedInfo();
         break;
       default:
         console.log("sheesh");

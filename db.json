@@ -278,7 +278,403 @@
       "errorMessage": null
     }
   ],
-  "watch": [],
+  "watch": [
+    {
+      "id": "tt0402115",
+      "title": "Just Sex and Nothing Else",
+      "originalTitle": "Csak szex és más semmi",
+      "fullTitle": "Just Sex and Nothing Else (2005)",
+      "type": "Movie",
+      "year": "2005",
+      "image": "https://imdb-api.com/images/original/MV5BMTIzNTY2MzU4Ml5BMl5BanBnXkFtZTcwODk4NzMwMg@@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2005-12-08",
+      "runtimeMins": "97",
+      "runtimeStr": "1h 37min",
+      "plot": "Dora rejects all men when she discovers that her fiance has been living a double life with another women throughout their relationship (he was married). But with her biological clock ticking, Dora feels the urge to have a baby. She places an ad, searching for sex with no strings attached. When she finds that her choices are limited to three men: Tamas, Ali, and Peter, Dora realizes that her plan is not as simple as she had anticipated.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "Awards, 4 wins & 1 nomination",
+      "directors": "Krisztina Goda",
+      "directorList": [
+        {
+          "id": "nm0323558",
+          "name": "Krisztina Goda"
+        }
+      ],
+      "writers": "Réka Divinyi, Krisztina Goda, Gábor Heller",
+      "writerList": [
+        {
+          "id": "nm1472530",
+          "name": "Réka Divinyi"
+        },
+        {
+          "id": "nm0323558",
+          "name": "Krisztina Goda"
+        },
+        {
+          "id": "nm0375322",
+          "name": "Gábor Heller"
+        }
+      ],
+      "stars": "Judit Schell, Kata Dobó, Sándor Csányi",
+      "starList": [
+        {
+          "id": "nm0770726",
+          "name": "Judit Schell"
+        },
+        {
+          "id": "nm0229957",
+          "name": "Kata Dobó"
+        },
+        {
+          "id": "nm0190800",
+          "name": "Sándor Csányi"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0770726",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Judit Schell",
+          "asCharacter": "Dóraas Dóra"
+        },
+        {
+          "id": "nm0229957",
+          "image": "https://imdb-api.com/images/original/MV5BMjA5NTM1MTkxOF5BMl5BanBnXkFtZTcwOTExMTIzMQ@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Kata Dobó",
+          "asCharacter": "Zsófias Zsófi"
+        },
+        {
+          "id": "nm0190800",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Sándor Csányi",
+          "asCharacter": "Tamásas Tamás"
+        },
+        {
+          "id": "nm0315195",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Károly Gesztesi",
+          "asCharacter": "Paskóas Paskó"
+        },
+        {
+          "id": "nm1300167",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Adél Jordán",
+          "asCharacter": "Sacias Saci"
+        },
+        {
+          "id": "nm0785031",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Zoltán Seress",
+          "asCharacter": "Péteras Péter"
+        },
+        {
+          "id": "nm0753588",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Zoltán Rátóti",
+          "asCharacter": "Andrásas András"
+        },
+        {
+          "id": "nm1370446",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Antal Czapkó",
+          "asCharacter": "Alias Ali"
+        },
+        {
+          "id": "nm0802463",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "László Sinkó",
+          "asCharacter": "Tivadaras Tivadar"
+        },
+        {
+          "id": "nm1124109",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Márta Martin",
+          "asCharacter": "Margitas Margit"
+        },
+        {
+          "id": "nm4190873",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Gyula Bacsa",
+          "asCharacter": "Zenészas Zenész"
+        },
+        {
+          "id": "nm4009921",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Anna Balogh",
+          "asCharacter": "András feleségeas András felesége"
+        },
+        {
+          "id": "nm0053042",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "László Baranyi",
+          "asCharacter": "Pista bácsias Pista bácsi"
+        },
+        {
+          "id": "nm1775270",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "István Betz",
+          "asCharacter": "Mentõápolóas Mentõápoló"
+        },
+        {
+          "id": "nm0081090",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Lukács Bicskey",
+          "asCharacter": "Hírdetésre jelentkezõas Hírdetésre jelentkezõ"
+        },
+        {
+          "id": "nm1237241",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Lóránt Bocskor-Salló",
+          "asCharacter": "Taxisas Taxis"
+        },
+        {
+          "id": "nm1584324",
+          "image": "https://imdb-api.com/images/original/MV5BZGE1ZjA2NDUtYjE3My00OGUwLWI5N2QtMzc3MzQ0NDkxNTcwXkEyXkFqcGdeQXVyNDc3MTU4Nw@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Lili Bordán",
+          "asCharacter": "Fiatal lányas Fiatal lány"
+        },
+        {
+          "id": "nm4190243",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Tamás Csikán",
+          "asCharacter": "Zenészas Zenész"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Comedy",
+      "genreList": [
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        }
+      ],
+      "companies": "Megafilm",
+      "companyList": [
+        {
+          "id": "co0123764",
+          "name": "Megafilm"
+        }
+      ],
+      "countries": "Hungary",
+      "countryList": [
+        {
+          "key": "Hungary",
+          "value": "Hungary"
+        }
+      ],
+      "languages": "Hungarian",
+      "languageList": [
+        {
+          "key": "Hungarian",
+          "value": "Hungarian"
+        }
+      ],
+      "contentRating": "Not Rated",
+      "imDbRating": "6.3",
+      "imDbRatingVotes": "3130",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "$1,100,000 (estimated)",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": "$1,112"
+      },
+      "tagline": null,
+      "keywords": "bikini,male nudity,clothed female naked male scene,topless female nudity,nudity",
+      "keywordList": [
+        "bikini",
+        "male nudity",
+        "clothed female naked male scene",
+        "topless female nudity",
+        "nudity"
+      ],
+      "similars": [
+        {
+          "id": "tt1134828",
+          "title": "Chameleon",
+          "image": "https://imdb-api.com/images/original/MV5BMTkxMTczMzk0Nl5BMl5BanBnXkFtZTgwODA2Mjc2MTE@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "7.3"
+        },
+        {
+          "id": "tt0303184",
+          "title": "Valami Amerika",
+          "image": "https://imdb-api.com/images/original/MV5BMTI0OTUzOTc5N15BMl5BanBnXkFtZTcwMDk5NzQyMQ@@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "6.9"
+        },
+        {
+          "id": "tt0486219",
+          "title": "Szabadság, szerelem",
+          "image": "https://imdb-api.com/images/original/MV5BOTY3MDY1NjkzNV5BMl5BanBnXkFtZTgwMDM3NTAzMTE@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "7.0"
+        },
+        {
+          "id": "tt0121403",
+          "title": "The Stationmaster Meets His Match",
+          "image": "https://imdb-api.com/images/original/MV5BNTA0MjA3YTQtYjdhMS00N2MxLWIzMzktYzhjOWQ0OWRhZTJlXkEyXkFqcGdeQXVyMzg3OTg0NTQ@._V1_Ratio0.7150_AL_.jpg",
+          "imDbRating": "8.3"
+        },
+        {
+          "id": "tt1235075",
+          "title": "Valami Amerika 2",
+          "image": "https://imdb-api.com/images/original/MV5BNjYyMjczMTYyNF5BMl5BanBnXkFtZTgwMDgxNjAyMTE@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "6.8"
+        },
+        {
+          "id": "tt1460022",
+          "title": "Poligamy",
+          "image": "https://imdb-api.com/images/original/MV5BMTk2MjI2MTYyNl5BMl5BanBnXkFtZTgwNjIyMDU4MzE@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "5.8"
+        },
+        {
+          "id": "tt8265174",
+          "title": "BÚÉK",
+          "image": "https://imdb-api.com/images/original/MV5BNjFmODdiYzYtN2NhMS00ZThkLTgxMjctMDQ3OWI3MDk5MzZmXkEyXkFqcGdeQXVyMTgzOTI4MzY@._V1_Ratio0.6957_AL_.jpg",
+          "imDbRating": "7.1"
+        },
+        {
+          "id": "tt8448426",
+          "title": "Neither with You",
+          "image": "https://imdb-api.com/images/original/MV5BMDBkOTJiOWUtNDM3MS00NWJkLTkxN2QtMDJlMzIyOWY3NTI4XkEyXkFqcGdeQXVyMjIzMDAwOTc@._V1_Ratio0.6957_AL_.jpg",
+          "imDbRating": "6.2"
+        },
+        {
+          "id": "tt0257290",
+          "title": "Üvegtigris",
+          "image": "https://imdb-api.com/images/original/MV5BYzg0MmI3NjUtZjZkYy00MmJmLTljMTItZGVjN2VkMGFhMDg3XkEyXkFqcGdeQXVyMzc1MDUyOTY@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "7.8"
+        },
+        {
+          "id": "tt1224369",
+          "title": "Made in Hungaria",
+          "image": "https://imdb-api.com/images/original/MV5BMjYzNjMwNzMtZjdkMC00ZTQzLWFjNzItMTc0MTRhMjFjM2I1XkEyXkFqcGdeQXVyNDYzOTU3NDM@._V1_Ratio0.7440_AL_.jpg",
+          "imDbRating": "6.8"
+        },
+        {
+          "id": "tt7571992",
+          "title": "Nyitva",
+          "image": "https://imdb-api.com/images/original/MV5BOTZhZjg1ODUtM2VkZi00MjE4LWI2ZmUtYjg4OWU4NGU2ODNiXkEyXkFqcGdeQXVyODE2NTM5NDA@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "6.4"
+        },
+        {
+          "id": "tt0476508",
+          "title": "Üvegtigris 2.",
+          "image": "https://imdb-api.com/images/original/MV5BYTkzZWVlNzItYzA2Yi00YTlkLWFlZTItNDU1MTE5OTcwZTI5XkEyXkFqcGdeQXVyMzQ0ODIzMTg@._V1_Ratio0.7150_AL_.jpg",
+          "imDbRating": "6.8"
+        }
+      ],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0441377",
+      "title": "Minotauromaquia",
+      "originalTitle": "",
+      "fullTitle": "Minotauromaquia (2004)",
+      "type": "Movie",
+      "year": "2004",
+      "image": "https://imdb-api.com/images/original/MV5BYTk0YTcwM2QtM2Y0YS00ZGQ1LThmZjYtOTc1NjVhOTdiMWQ4XkEyXkFqcGdeQXVyMzM4NjcxOTc@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": null,
+      "runtimeMins": "PT10M",
+      "runtimeStr": "PT10M",
+      "plot": "An imaginary insight into Pablo Picasso's creative mind and painted creatures and characters. We enter in his head and walk with him the intricate maze that was his imagination to find the creatures and stories that populated his psyche and came out when he painted a canvas. His imagination is presented as the myth of the maze and the Minotaur, and some of the characters in the piece are in Picasso's real paintings - his famous dove, the Minotaur, and the ladies of Avignon, among many others.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "Awards, 2 wins & 3 nominations",
+      "directors": "Juan Pablo Etcheverry",
+      "directorList": [
+        {
+          "id": "nm0262012",
+          "name": "Juan Pablo Etcheverry"
+        }
+      ],
+      "writers": "Juan Pablo Etcheverry, Xosé Zapata",
+      "writerList": [
+        {
+          "id": "nm0262012",
+          "name": "Juan Pablo Etcheverry"
+        },
+        {
+          "id": "nm1364853",
+          "name": "Xosé Zapata"
+        }
+      ],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Animation, Short, Fantasy",
+      "genreList": [
+        {
+          "key": "Animation",
+          "value": "Animation"
+        },
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Fantasy",
+          "value": "Fantasy"
+        }
+      ],
+      "companies": "Ignacio Benedeti Cinema",
+      "companyList": [
+        {
+          "id": "co0142460",
+          "name": "Ignacio Benedeti Cinema"
+        }
+      ],
+      "countries": "Spain",
+      "countryList": [
+        {
+          "key": "Spain",
+          "value": "Spain"
+        }
+      ],
+      "languages": "None",
+      "languageList": [
+        {
+          "key": "None",
+          "value": "None"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": "6.8",
+      "imDbRatingVotes": "118",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "maze,minotaur,painting,pablo picasso,greek mythology",
+      "keywordList": [
+        "maze",
+        "minotaur",
+        "painting",
+        "pablo picasso",
+        "greek mythology"
+      ],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    }
+  ],
   "favorite": [],
   "data": [
     {
@@ -2967,6 +3363,537 @@
           "imDbRating": "6.8"
         }
       ],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0402115",
+      "title": "Just Sex and Nothing Else",
+      "originalTitle": "Csak szex és más semmi",
+      "fullTitle": "Just Sex and Nothing Else (2005)",
+      "type": "Movie",
+      "year": "2005",
+      "image": "https://imdb-api.com/images/original/MV5BMTIzNTY2MzU4Ml5BMl5BanBnXkFtZTcwODk4NzMwMg@@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2005-12-08",
+      "runtimeMins": "97",
+      "runtimeStr": "1h 37min",
+      "plot": "Dora rejects all men when she discovers that her fiance has been living a double life with another women throughout their relationship (he was married). But with her biological clock ticking, Dora feels the urge to have a baby. She places an ad, searching for sex with no strings attached. When she finds that her choices are limited to three men: Tamas, Ali, and Peter, Dora realizes that her plan is not as simple as she had anticipated.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "Awards, 4 wins & 1 nomination",
+      "directors": "Krisztina Goda",
+      "directorList": [
+        {
+          "id": "nm0323558",
+          "name": "Krisztina Goda"
+        }
+      ],
+      "writers": "Réka Divinyi, Krisztina Goda, Gábor Heller",
+      "writerList": [
+        {
+          "id": "nm1472530",
+          "name": "Réka Divinyi"
+        },
+        {
+          "id": "nm0323558",
+          "name": "Krisztina Goda"
+        },
+        {
+          "id": "nm0375322",
+          "name": "Gábor Heller"
+        }
+      ],
+      "stars": "Judit Schell, Kata Dobó, Sándor Csányi",
+      "starList": [
+        {
+          "id": "nm0770726",
+          "name": "Judit Schell"
+        },
+        {
+          "id": "nm0229957",
+          "name": "Kata Dobó"
+        },
+        {
+          "id": "nm0190800",
+          "name": "Sándor Csányi"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0770726",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Judit Schell",
+          "asCharacter": "Dóraas Dóra"
+        },
+        {
+          "id": "nm0229957",
+          "image": "https://imdb-api.com/images/original/MV5BMjA5NTM1MTkxOF5BMl5BanBnXkFtZTcwOTExMTIzMQ@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Kata Dobó",
+          "asCharacter": "Zsófias Zsófi"
+        },
+        {
+          "id": "nm0190800",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Sándor Csányi",
+          "asCharacter": "Tamásas Tamás"
+        },
+        {
+          "id": "nm0315195",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Károly Gesztesi",
+          "asCharacter": "Paskóas Paskó"
+        },
+        {
+          "id": "nm1300167",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Adél Jordán",
+          "asCharacter": "Sacias Saci"
+        },
+        {
+          "id": "nm0785031",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Zoltán Seress",
+          "asCharacter": "Péteras Péter"
+        },
+        {
+          "id": "nm0753588",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Zoltán Rátóti",
+          "asCharacter": "Andrásas András"
+        },
+        {
+          "id": "nm1370446",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Antal Czapkó",
+          "asCharacter": "Alias Ali"
+        },
+        {
+          "id": "nm0802463",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "László Sinkó",
+          "asCharacter": "Tivadaras Tivadar"
+        },
+        {
+          "id": "nm1124109",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Márta Martin",
+          "asCharacter": "Margitas Margit"
+        },
+        {
+          "id": "nm4190873",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Gyula Bacsa",
+          "asCharacter": "Zenészas Zenész"
+        },
+        {
+          "id": "nm4009921",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Anna Balogh",
+          "asCharacter": "András feleségeas András felesége"
+        },
+        {
+          "id": "nm0053042",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "László Baranyi",
+          "asCharacter": "Pista bácsias Pista bácsi"
+        },
+        {
+          "id": "nm1775270",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "István Betz",
+          "asCharacter": "Mentõápolóas Mentõápoló"
+        },
+        {
+          "id": "nm0081090",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Lukács Bicskey",
+          "asCharacter": "Hírdetésre jelentkezõas Hírdetésre jelentkezõ"
+        },
+        {
+          "id": "nm1237241",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Lóránt Bocskor-Salló",
+          "asCharacter": "Taxisas Taxis"
+        },
+        {
+          "id": "nm1584324",
+          "image": "https://imdb-api.com/images/original/MV5BZGE1ZjA2NDUtYjE3My00OGUwLWI5N2QtMzc3MzQ0NDkxNTcwXkEyXkFqcGdeQXVyNDc3MTU4Nw@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Lili Bordán",
+          "asCharacter": "Fiatal lányas Fiatal lány"
+        },
+        {
+          "id": "nm4190243",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Tamás Csikán",
+          "asCharacter": "Zenészas Zenész"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Comedy",
+      "genreList": [
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        }
+      ],
+      "companies": "Megafilm",
+      "companyList": [
+        {
+          "id": "co0123764",
+          "name": "Megafilm"
+        }
+      ],
+      "countries": "Hungary",
+      "countryList": [
+        {
+          "key": "Hungary",
+          "value": "Hungary"
+        }
+      ],
+      "languages": "Hungarian",
+      "languageList": [
+        {
+          "key": "Hungarian",
+          "value": "Hungarian"
+        }
+      ],
+      "contentRating": "Not Rated",
+      "imDbRating": "6.3",
+      "imDbRatingVotes": "3130",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "$1,100,000 (estimated)",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": "$1,112"
+      },
+      "tagline": null,
+      "keywords": "bikini,male nudity,clothed female naked male scene,topless female nudity,nudity",
+      "keywordList": [
+        "bikini",
+        "male nudity",
+        "clothed female naked male scene",
+        "topless female nudity",
+        "nudity"
+      ],
+      "similars": [
+        {
+          "id": "tt1134828",
+          "title": "Chameleon",
+          "image": "https://imdb-api.com/images/original/MV5BMTkxMTczMzk0Nl5BMl5BanBnXkFtZTgwODA2Mjc2MTE@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "7.3"
+        },
+        {
+          "id": "tt0303184",
+          "title": "Valami Amerika",
+          "image": "https://imdb-api.com/images/original/MV5BMTI0OTUzOTc5N15BMl5BanBnXkFtZTcwMDk5NzQyMQ@@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "6.9"
+        },
+        {
+          "id": "tt0486219",
+          "title": "Szabadság, szerelem",
+          "image": "https://imdb-api.com/images/original/MV5BOTY3MDY1NjkzNV5BMl5BanBnXkFtZTgwMDM3NTAzMTE@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "7.0"
+        },
+        {
+          "id": "tt0121403",
+          "title": "The Stationmaster Meets His Match",
+          "image": "https://imdb-api.com/images/original/MV5BNTA0MjA3YTQtYjdhMS00N2MxLWIzMzktYzhjOWQ0OWRhZTJlXkEyXkFqcGdeQXVyMzg3OTg0NTQ@._V1_Ratio0.7150_AL_.jpg",
+          "imDbRating": "8.3"
+        },
+        {
+          "id": "tt1235075",
+          "title": "Valami Amerika 2",
+          "image": "https://imdb-api.com/images/original/MV5BNjYyMjczMTYyNF5BMl5BanBnXkFtZTgwMDgxNjAyMTE@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "6.8"
+        },
+        {
+          "id": "tt1460022",
+          "title": "Poligamy",
+          "image": "https://imdb-api.com/images/original/MV5BMTk2MjI2MTYyNl5BMl5BanBnXkFtZTgwNjIyMDU4MzE@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "5.8"
+        },
+        {
+          "id": "tt8265174",
+          "title": "BÚÉK",
+          "image": "https://imdb-api.com/images/original/MV5BNjFmODdiYzYtN2NhMS00ZThkLTgxMjctMDQ3OWI3MDk5MzZmXkEyXkFqcGdeQXVyMTgzOTI4MzY@._V1_Ratio0.6957_AL_.jpg",
+          "imDbRating": "7.1"
+        },
+        {
+          "id": "tt8448426",
+          "title": "Neither with You",
+          "image": "https://imdb-api.com/images/original/MV5BMDBkOTJiOWUtNDM3MS00NWJkLTkxN2QtMDJlMzIyOWY3NTI4XkEyXkFqcGdeQXVyMjIzMDAwOTc@._V1_Ratio0.6957_AL_.jpg",
+          "imDbRating": "6.2"
+        },
+        {
+          "id": "tt0257290",
+          "title": "Üvegtigris",
+          "image": "https://imdb-api.com/images/original/MV5BYzg0MmI3NjUtZjZkYy00MmJmLTljMTItZGVjN2VkMGFhMDg3XkEyXkFqcGdeQXVyMzc1MDUyOTY@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "7.8"
+        },
+        {
+          "id": "tt1224369",
+          "title": "Made in Hungaria",
+          "image": "https://imdb-api.com/images/original/MV5BMjYzNjMwNzMtZjdkMC00ZTQzLWFjNzItMTc0MTRhMjFjM2I1XkEyXkFqcGdeQXVyNDYzOTU3NDM@._V1_Ratio0.7440_AL_.jpg",
+          "imDbRating": "6.8"
+        },
+        {
+          "id": "tt7571992",
+          "title": "Nyitva",
+          "image": "https://imdb-api.com/images/original/MV5BOTZhZjg1ODUtM2VkZi00MjE4LWI2ZmUtYjg4OWU4NGU2ODNiXkEyXkFqcGdeQXVyODE2NTM5NDA@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "6.4"
+        },
+        {
+          "id": "tt0476508",
+          "title": "Üvegtigris 2.",
+          "image": "https://imdb-api.com/images/original/MV5BYTkzZWVlNzItYzA2Yi00YTlkLWFlZTItNDU1MTE5OTcwZTI5XkEyXkFqcGdeQXVyMzQ0ODIzMTg@._V1_Ratio0.7150_AL_.jpg",
+          "imDbRating": "6.8"
+        }
+      ],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0441377",
+      "title": "Minotauromaquia",
+      "originalTitle": "",
+      "fullTitle": "Minotauromaquia (2004)",
+      "type": "Movie",
+      "year": "2004",
+      "image": "https://imdb-api.com/images/original/MV5BYTk0YTcwM2QtM2Y0YS00ZGQ1LThmZjYtOTc1NjVhOTdiMWQ4XkEyXkFqcGdeQXVyMzM4NjcxOTc@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": null,
+      "runtimeMins": "PT10M",
+      "runtimeStr": "PT10M",
+      "plot": "An imaginary insight into Pablo Picasso's creative mind and painted creatures and characters. We enter in his head and walk with him the intricate maze that was his imagination to find the creatures and stories that populated his psyche and came out when he painted a canvas. His imagination is presented as the myth of the maze and the Minotaur, and some of the characters in the piece are in Picasso's real paintings - his famous dove, the Minotaur, and the ladies of Avignon, among many others.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "Awards, 2 wins & 3 nominations",
+      "directors": "Juan Pablo Etcheverry",
+      "directorList": [
+        {
+          "id": "nm0262012",
+          "name": "Juan Pablo Etcheverry"
+        }
+      ],
+      "writers": "Juan Pablo Etcheverry, Xosé Zapata",
+      "writerList": [
+        {
+          "id": "nm0262012",
+          "name": "Juan Pablo Etcheverry"
+        },
+        {
+          "id": "nm1364853",
+          "name": "Xosé Zapata"
+        }
+      ],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Animation, Short, Fantasy",
+      "genreList": [
+        {
+          "key": "Animation",
+          "value": "Animation"
+        },
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Fantasy",
+          "value": "Fantasy"
+        }
+      ],
+      "companies": "Ignacio Benedeti Cinema",
+      "companyList": [
+        {
+          "id": "co0142460",
+          "name": "Ignacio Benedeti Cinema"
+        }
+      ],
+      "countries": "Spain",
+      "countryList": [
+        {
+          "key": "Spain",
+          "value": "Spain"
+        }
+      ],
+      "languages": "None",
+      "languageList": [
+        {
+          "key": "None",
+          "value": "None"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": "6.8",
+      "imDbRatingVotes": "118",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "maze,minotaur,painting,pablo picasso,greek mythology",
+      "keywordList": [
+        "maze",
+        "minotaur",
+        "painting",
+        "pablo picasso",
+        "greek mythology"
+      ],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt6784906",
+      "title": "The Murderous Revenge of Lizzie Stillborn",
+      "originalTitle": "",
+      "fullTitle": "The Murderous Revenge of Lizzie Stillborn (2014)",
+      "type": "Movie",
+      "year": "2014",
+      "image": "https://imdb-api.com/images/original/MV5BNzc3Nzk0MDYtMDQzNy00MzM0LTg0NTMtMDgyZDJmYTc4Y2FkXkEyXkFqcGdeQXVyNjU3NDA4Mjg@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2014-05-01",
+      "runtimeMins": null,
+      "runtimeStr": null,
+      "plot": "A mother's love has never been so deadly in this follow up to \"The Murderous Rampage of Malachi Stitch\". This time a killer is resurrected during the aftermath of Malachi's capture by a special FBI task force. Once more, the tortured soul of Lizzie Stillborn (Lisa Vaccaro), breathes life and rises from her grave to seek revenge against those responsible for her death and for the death of her child. As the body count continues to mount, lone survivor agent Samantha Faucet (Michael Centi), along with her many unique companions, embark on a mission to put an end to the carnage. Along the way, mysteries are solved and past sins are brought to light. Can agent Faucet, a trans-gendered, reincarnated slave owner, raised by a karate master, that was rescued from a yeti as a child, along with her colorful allies Capatain Boy-Juice Jones (Adam Hughes), Sister VonFister( Ann Marie Phelps), and psychic lab technician Cassandra Ray (Dawn Beckman) put an end to the horror? Or will they all fall victim to \"The Murderous Revenge of Lizzie Stillborn\"?",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "",
+      "directorList": [],
+      "writers": "",
+      "writerList": [],
+      "stars": "Dawn Beckman, Michael Leo Centi, Ben Eckstrom",
+      "starList": [
+        {
+          "id": "nm8925040",
+          "name": "Dawn Beckman"
+        },
+        {
+          "id": "nm8860051",
+          "name": "Michael Leo Centi"
+        },
+        {
+          "id": "nm8925036",
+          "name": "Ben Eckstrom"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm8925040",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Dawn Beckman",
+          "asCharacter": "Cassandra Rayas Cassandra Ray"
+        },
+        {
+          "id": "nm8860051",
+          "image": "https://imdb-api.com/images/original/MV5BMTZlMGNlY2YtNGNmYy00OGY4LWJmMmUtODMyMGE0MjgwYjYyXkEyXkFqcGdeQXVyNjU3NDA4Mjg@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Michael Leo Centi",
+          "asCharacter": "Gregory Mineras Gregory Miner"
+        },
+        {
+          "id": "nm8925036",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Ben Eckstrom",
+          "asCharacter": "Mikey Santosas Mikey Santos"
+        },
+        {
+          "id": "nm8925041",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Lena Flores",
+          "asCharacter": "Selena Santosas Selena Santos"
+        },
+        {
+          "id": "nm8925039",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Adam Hughes",
+          "asCharacter": "Captain Boy-Juice Jonesas Captain Boy-Juice Jones"
+        },
+        {
+          "id": "nm8925042",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Ann Marie Phelps",
+          "asCharacter": "Sister VonFisteras Sister VonFister"
+        },
+        {
+          "id": "nm8925038",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Don Traynor",
+          "asCharacter": "Detective Englundas Detective Englund"
+        },
+        {
+          "id": "nm8925037",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Lisa Vaccaro",
+          "asCharacter": "Lizzie Stillbornas Lizzie Stillborn"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Horror",
+      "genreList": [
+        {
+          "key": "Horror",
+          "value": "Horror"
+        }
+      ],
+      "companies": "Glamboy Productions",
+      "companyList": [
+        {
+          "id": "co0638423",
+          "name": "Glamboy Productions"
+        }
+      ],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "$1,000 (estimated)",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": "A mother's love has never been so deadly.",
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
       "tvSeriesInfo": null,
       "tvEpisodeInfo": null,
       "errorMessage": null

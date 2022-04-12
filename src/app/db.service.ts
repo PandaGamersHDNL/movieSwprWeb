@@ -42,4 +42,13 @@ export class DbService {
       }
     );
   }
+
+  postFav(data: TvInfo) {
+    console.log("post watch");
+    this.http.post(`${this.dbUrl}/favorite`, data).subscribe({
+      error: (e) => {console.log(e);},
+      complete: () => {console.log("post complete");}
+      }
+    );
+  }
 }
