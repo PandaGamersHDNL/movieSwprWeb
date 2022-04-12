@@ -12,4 +12,4 @@
     <span *ngIf="valImdbRating()">{{tvInfo.imDbRating}}<b>/10</b></span>
   </p>
 </div>
-<app-buttons></app-buttons>
+<app-buttons (buttonClicked)="buttonClicked($event)"></app-buttons>

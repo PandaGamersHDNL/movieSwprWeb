@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { DbService } from '../db.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
+import { EventButtons } from '../buttons/buttons.component';
 
 @Component({
   selector: 'app-swiper',
@@ -50,6 +51,13 @@ export class AppSwiperComponent implements OnInit {
 
   public valContentRating() {
     return this.tvInfo.contentRating ? true : false;
+  }
+
+  public buttonClicked(button: EventButtons){
+    switch (button){
+      case EventButtons.no:
+        this.tvInfo = this.data[genRandomIndex(this.data.length)]
+    }
   }
 }
 

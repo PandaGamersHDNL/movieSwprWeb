@@ -1,17 +1,17 @@
 <p>
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+  <button mat-fab color="warn" aria-label="no" (click)="noClicked()">
     <mat-icon>clear</mat-icon>
   </button>
   &emsp;
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+  <button mat-fab color="primary" aria-label="seen" (click)="seenClicked()">
     <mat-icon>visibility</mat-icon>
   </button>
   &emsp;
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+  <button mat-fab color="warn" aria-label="favorite" (click)="favClicked()">
     <mat-icon>favorite</mat-icon>
   </button>
   &emsp;
-  <button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+  <button mat-fab color="primary" aria-label="watch later" (click)="watchClicked()">
     <mat-icon>watch_later</mat-icon>
   </button>
 </p>

@@ -1,5 +1,5 @@
 p {
-  position: sticky;
+  position: fixed;
   bottom: 0;
   text-align: center;
   width: 100%;
@@ -8,4 +8,8 @@ p {
 
 button {
   margin: 1em;
+}
+
+body {
+  position: relative;
 }
