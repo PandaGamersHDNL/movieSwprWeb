@@ -1,6 +1,7 @@
 <div>
   <img src={{tvInfo.image}} />
-  <h1>{{tvInfo.title}}</h1>
+  <h1 *ngIf="valTitle()">{{tvInfo.title}}</h1>
+  <h1 *ngIf="!valTitle()">Loading...</h1>
   <p>{{tvInfo.tagline}}</p>
   <p><b>genres:</b> {{tvInfo.genres}}</p>
   <p><b>languages:</b> {{tvInfo.languages}}</p>

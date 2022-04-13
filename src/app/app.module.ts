@@ -8,6 +8,7 @@ import { AppSwiperComponent } from './app-swiper/app-swiper.component';
 import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { WatchComponent } from './watch/watch.component';
 
 @NgModule({
 	declarations: [
@@ -15,6 +16,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 		AppSwiperComponent,
 		NavComponent,
 		ButtonsComponent,
+  WatchComponent,
 	],
 	imports: [
 		BrowserModule,

@@ -38,6 +38,10 @@ export class AppSwiperComponent implements OnInit {
   async ngOnInit(): Promise<void> {
     this.onGetData();
   }
+
+  public valTitle() {
+    return this.tvInfo.title ? true : false;
+  }
   public valRuntime() {
     return this.tvInfo.runtimeStr ? true : false;
   }

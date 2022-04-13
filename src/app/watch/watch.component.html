@@ -1,0 +1,10 @@
+<div>
+  <!--searchbar + sort options?-->
+  <!--small img of movie + title?-->
+<div id="items">
+  <a id="item" *ngFor="let item of watch" href="{{item.title}}">
+    <h3>{{item.title}}</h3>
+    <img src="{{item.image}}" />
+  </a>
+</div>
+</div>

@@ -16,6 +16,10 @@ export class DbService {
     return this.http.get<TvInfo[]>(`${this.dbUrl}/data`);
   }
 
+  getWatch(): Observable<TvInfo[]>{
+    return this.http.get<TvInfo[]>(`${this.dbUrl}/watch`);
+  }
+
   postSeen(data: TvInfo) {
     console.log("post seen");
     this.http.post(`${this.dbUrl}/seen`, data).subscribe({
