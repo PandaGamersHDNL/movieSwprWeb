@@ -3,6 +3,7 @@ import { environment } from 'src/environments/environment';
 import { DbService } from '../db.service';
 import { HttpClient, HttpHandler } from '@angular/common/http';
 import { EventButtons } from '../buttons/buttons.component';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-swiper',
@@ -15,6 +16,7 @@ export class AppSwiperComponent implements OnInit {
   public seen: TvInfo[] = [];
   public watch: TvInfo[] = [];
   public fav: TvInfo[] = [];
+  public failed: failedId[] = [];
 
   constructor(private db: DbService) {
     this.tvInfo = {}
@@ -35,7 +37,22 @@ export class AppSwiperComponent implements OnInit {
     return this.data;
   }
 
+  async onGetFailed(): Promise<failedId[]> {
+    this.db.getFailed().subscribe({
+      next: (v) => {
+        this.failed = v;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    return this.failed;
+  }
+
+
+
   async ngOnInit(): Promise<void> {
+    console.log(genTitleId());
+
     this.onGetData();
   }
 
@@ -61,44 +78,37 @@ export class AppSwiperComponent implements OnInit {
   }
 
   async buttonClicked(button: EventButtons) {
+    const info = this.tvInfo;
+    this.tvInfo = { title: "adding to db" };
     switch (button) {
       case EventButtons.no:
-        this.tvInfo = {};
-        this.tvInfo = await this.genCheckedInfo();
         break;
-      case EventButtons.seen:{
-        const info = this.tvInfo;
-        this.tvInfo = {};
+      case EventButtons.seen: {
         this.db.postSeen(info);
-        this.tvInfo = await this.genCheckedInfo();
-        break;}
+        break;
+      }
       case EventButtons.watchLater: {
-        const info = this.tvInfo;
-        this.tvInfo = {};
         this.db.postWatch(info);
-        this.tvInfo = await this.genCheckedInfo();
         break;
       }
       case EventButtons.favorite:
-        const info = this.tvInfo;
-        this.tvInfo = {};
         this.db.postFav(info);
-        this.tvInfo = await this.genCheckedInfo();
         break;
-      default:
-        console.log("sheesh");
-
     }
+    this.tvInfo = { title: "Loading new movie" }
+    this.tvInfo = await this.genCheckedInfo();
   }
   //checks db for overlapping ids True = not in db
-  checkOverlap(id: string): boolean {
+  async checkOverlap(id: string): Promise<boolean> {
     // this but then for seen watched and favorite
+    await this.onGetFailed();
     const findTvInfo = (info: TvInfo) => {
       if (info.id == id)
         return true;
       return false;
     }
     if (
+      !this.failed.find(e => {e.id == id}) &&
       this.seen.find(findTvInfo) == undefined &&
       this.watch.find(findTvInfo) == undefined &&
       this.fav.find(findTvInfo) == undefined
@@ -115,20 +125,26 @@ export class AppSwiperComponent implements OnInit {
     do {
       bNewInfo = false;
       const id = genTitleId()
-      if (this.checkOverlap(id)) {
+      if (await this.checkOverlap(id)) {
         const findTvInfo = (info: TvInfo) => {
           if (info.id == id)
             return true;
           return false;
         }
         tvInfo = this.data.find(findTvInfo);
-        if(!tvInfo) {
+        if (!tvInfo) {
           tvInfo = await this.genCheckedInfoAPI(id);
           bNewInfo = true;
+          if(tvInfo.type == "TVEpisode" && tvInfo.id) {
+            console.log("post failed for: ", tvInfo.id);
+
+            this.db.postFailedId({id: tvInfo.id});
+            tvInfo = undefined;
+          }
         }
       }
-    } while (tvInfo == undefined || !tvInfo.title || tvInfo.type == "TVEpisode")
-    if (bNewInfo){
+    } while (tvInfo == undefined || !tvInfo.title)
+    if (bNewInfo) {
       this.data.push(tvInfo);
       this.db.postData(tvInfo);
     }
@@ -137,12 +153,12 @@ export class AppSwiperComponent implements OnInit {
   //gen with api request
   async genCheckedInfoAPI(id: string) {
     let tvInfo: TvInfo | undefined = undefined;
-        tvInfo = await getIdInfo(id);
-        console.log(tvInfo.errorMessage);
-        console.log(tvInfo.errorMessage?.match("Maximum usage"));
-        if (tvInfo.errorMessage?.match("Maximum usage") != null) {
-          throw new Error("maximum usage reached")
-      }
+    tvInfo = await getIdInfo(id);
+    console.log(tvInfo.errorMessage);
+    console.log(tvInfo.errorMessage?.match("Maximum usage"));
+    if (tvInfo.errorMessage?.match("Maximum usage") != null) {
+      throw new Error("maximum usage reached of API key")
+    }
     return tvInfo;
   }
 }
@@ -212,3 +228,6 @@ function genRandomIndex(length: number): number {
   return Math.floor(Math.random() * length)
 }
 
+export interface failedId {
+  id: string
+}

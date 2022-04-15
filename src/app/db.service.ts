@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import { TvInfo } from './app-swiper/app-swiper.component';
+import { failedId, TvInfo } from './app-swiper/app-swiper.component';
 
 @Injectable({
   providedIn: 'root'
@@ -18,6 +18,10 @@ export class DbService {
 
   getWatch(): Observable<TvInfo[]>{
     return this.http.get<TvInfo[]>(`${this.dbUrl}/watch`);
+  }
+
+  getFailed(): Observable<failedId[]>{
+    return this.http.get<failedId[]>(`${this.dbUrl}/failedId`);
   }
 
   postSeen(data: TvInfo) {
@@ -50,6 +54,17 @@ export class DbService {
   postFav(data: TvInfo) {
     console.log("post watch");
     this.http.post(`${this.dbUrl}/favorite`, data).subscribe({
+      error: (e) => {console.log(e);},
+      complete: () => {console.log("post complete");}
+      }
+    );
+  }
+
+  postFailedId(data: failedId) {
+    console.log(data);
+
+    console.log("post watch");
+    this.http.post(`${this.dbUrl}/failedId`, data).subscribe({
       error: (e) => {console.log(e);},
       complete: () => {console.log("post complete");}
       }
