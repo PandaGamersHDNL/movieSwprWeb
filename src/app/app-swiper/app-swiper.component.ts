@@ -12,6 +12,8 @@ import { ThisReceiver } from '@angular/compiler';
 })
 export class AppSwiperComponent implements OnInit {
   public tvInfo: TvInfo;
+  //using these so we don't have to make get calls each time
+  public bApi: boolean = false;
   public data: TvInfo[] = [];
   public seen: TvInfo[] = [];
   public watch: TvInfo[] = [];
@@ -23,6 +25,14 @@ export class AppSwiperComponent implements OnInit {
     //const handler = new HttpClient()
     //this.db = new DbService()
   }
+  async ngOnInit(): Promise<void> {
+    //this.db.postApiFail();
+    await this.onGetApiFail();
+    this.onGetData();
+    this.onGetFailed();
+    this.onGetWatch();
+  }
+
 
   async onGetData(): Promise<TvInfo[]> {
     this.db.getData().subscribe({
@@ -38,7 +48,7 @@ export class AppSwiperComponent implements OnInit {
   }
 
   async onGetFailed(): Promise<failedId[]> {
-    this.db.getFailed().subscribe({
+    this.db.getFailedId().subscribe({
       next: (v) => {
         this.failed = v;
       },
@@ -48,13 +58,53 @@ export class AppSwiperComponent implements OnInit {
     return this.failed;
   }
 
-
-
-  async ngOnInit(): Promise<void> {
-    console.log(genTitleId());
-
-    this.onGetData();
+  async onGetWatch(): Promise<TvInfo[]> {
+    this.db.getWatch().subscribe({
+      next: (v) => {
+        this.watch = v;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    return this.watch;
   }
+
+  async onGetApiFail(): Promise<void> {
+    this.db.getApiFail().subscribe({
+      next: (v) => {
+        const day = new Date(v.date);
+        day.setTime(day.getTime() + day.getTimezoneOffset() * 60 * 1000)
+        console.log(day);
+        const today = new Date();
+        today.setTime(today.getTime() + today.getTimezoneOffset() * 60 * 1000)
+        console.log(today);
+
+        if (day.getTime() < today.getTime() &&
+          day.getFullYear() <= today.getFullYear() &&
+          day.getMonth() <= today.getMonth() &&
+          day.getDay() < today.getDay()) {
+          this.bApi = true;
+        }
+        console.log(this.bApi);
+
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+  }
+
+  async onGetFav(): Promise<TvInfo[]> {
+    this.db.getFav().subscribe({
+      next: (v) => {
+        this.fav = v;
+      },
+      error: (e) => console.error(e),
+      complete: () => console.info('complete')
+    });
+    return this.fav;
+  }
+
+
 
   public valTitle() {
     return this.tvInfo.title ? true : false;
@@ -85,14 +135,17 @@ export class AppSwiperComponent implements OnInit {
         break;
       case EventButtons.seen: {
         this.db.postSeen(info);
+        this.seen.push(info);
         break;
       }
       case EventButtons.watchLater: {
         this.db.postWatch(info);
+        this.watch.push(info);
         break;
       }
       case EventButtons.favorite:
         this.db.postFav(info);
+        this.fav.push(info);
         break;
     }
     this.tvInfo = { title: "Loading new movie" }
@@ -101,14 +154,13 @@ export class AppSwiperComponent implements OnInit {
   //checks db for overlapping ids True = not in db
   async checkOverlap(id: string): Promise<boolean> {
     // this but then for seen watched and favorite
-    await this.onGetFailed();
     const findTvInfo = (info: TvInfo) => {
       if (info.id == id)
         return true;
       return false;
     }
     if (
-      !this.failed.find(e => {e.id == id}) &&
+      !this.failed.find(e => { e.id == id }) &&
       this.seen.find(findTvInfo) == undefined &&
       this.watch.find(findTvInfo) == undefined &&
       this.fav.find(findTvInfo) == undefined
@@ -135,10 +187,10 @@ export class AppSwiperComponent implements OnInit {
         if (!tvInfo) {
           tvInfo = await this.genCheckedInfoAPI(id);
           bNewInfo = true;
-          if(tvInfo.type == "TVEpisode" && tvInfo.id) {
+          if (tvInfo.type == "TVEpisode" && tvInfo.id) {
             console.log("post failed for: ", tvInfo.id);
 
-            this.db.postFailedId({id: tvInfo.id});
+            this.db.postFailedId({ id: tvInfo.id });
             tvInfo = undefined;
           }
         }
