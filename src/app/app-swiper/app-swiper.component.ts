@@ -27,10 +27,11 @@ export class AppSwiperComponent implements OnInit {
   }
   async ngOnInit(): Promise<void> {
     //this.db.postApiFail();
+    this.tvInfo = { title: "initializing" }
     await this.onGetApiFail();
-    this.onGetData();
-    this.onGetFailed();
-    this.onGetWatch();
+    await this.onGetData();
+    await this.onGetFailed();
+    await this.onGetWatch();
   }
 
 
@@ -47,15 +48,14 @@ export class AppSwiperComponent implements OnInit {
     return this.data;
   }
 
-  async onGetFailed(): Promise<failedId[]> {
+  async onGetFailed(): Promise<void> {
     this.db.getFailedId().subscribe({
-      next: (v) => {
+      next: async (v) => {
         this.failed = v;
       },
       error: (e) => console.error(e),
       complete: () => console.info('complete')
     });
-    return this.failed;
   }
 
   async onGetWatch(): Promise<TvInfo[]> {
@@ -85,7 +85,9 @@ export class AppSwiperComponent implements OnInit {
           day.getDay() < today.getDay()) {
           this.bApi = true;
         }
-        console.log(this.bApi);
+        if(!this.bApi) {
+          alert("the api can not request any more, these are from db (dublicates are possible)")
+        }
 
       },
       error: (e) => console.error(e),
@@ -160,7 +162,7 @@ export class AppSwiperComponent implements OnInit {
       return false;
     }
     if (
-      !this.failed.find(e => { e.id == id }) &&
+      this.failed.find(e => e.id == id) == undefined &&
       this.seen.find(findTvInfo) == undefined &&
       this.watch.find(findTvInfo) == undefined &&
       this.fav.find(findTvInfo) == undefined
@@ -174,28 +176,37 @@ export class AppSwiperComponent implements OnInit {
   async genCheckedInfo() {
     let tvInfo: TvInfo | undefined = undefined;
     let bNewInfo;
-    do {
-      bNewInfo = false;
-      const id = genTitleId()
-      if (await this.checkOverlap(id)) {
-        const findTvInfo = (info: TvInfo) => {
-          if (info.id == id)
-            return true;
-          return false;
-        }
-        tvInfo = this.data.find(findTvInfo);
-        if (!tvInfo) {
-          tvInfo = await this.genCheckedInfoAPI(id);
-          bNewInfo = true;
-          if (tvInfo.type == "TVEpisode" && tvInfo.id) {
-            console.log("post failed for: ", tvInfo.id);
+    if (this.bApi) {
+      do {
+        bNewInfo = false;
+        const id = genTitleId()
+        if (await this.checkOverlap(id)) {
+          const findTvInfo = (info: TvInfo) => {
+            if (info.id == id)
+              return true;
+            return false;
+          }
+          tvInfo = this.data.find(findTvInfo);
+          if (!tvInfo) {
 
-            this.db.postFailedId({ id: tvInfo.id });
-            tvInfo = undefined;
+            tvInfo = await this.genCheckedInfoAPI(id);
+            bNewInfo = true;
+            if (tvInfo.type == "TVEpisode" && tvInfo.id) {
+              console.log("post failed for: ", tvInfo.id);
+              this.failed.push({ id: tvInfo.id })
+              this.db.postFailedId({ id: tvInfo.id });
+              tvInfo = undefined;
+            }
+
           }
         }
-      }
-    } while (tvInfo == undefined || !tvInfo.title)
+      } while (tvInfo == undefined || !tvInfo.title)
+    }
+    else {
+      do {
+        tvInfo = this.data[genRandomIndex(this.data.length)]
+      } while(tvInfo.id == undefined || (await this.checkOverlap(tvInfo.id)) == false);
+    }
     if (bNewInfo) {
       this.data.push(tvInfo);
       this.db.postData(tvInfo);
@@ -209,7 +220,9 @@ export class AppSwiperComponent implements OnInit {
     console.log(tvInfo.errorMessage);
     console.log(tvInfo.errorMessage?.match("Maximum usage"));
     if (tvInfo.errorMessage?.match("Maximum usage") != null) {
-      throw new Error("maximum usage reached of API key")
+      this.db.postApiFail();
+      this.bApi = false;
+      alert("maximum api requests reached, all movies will come from db");
     }
     return tvInfo;
   }
