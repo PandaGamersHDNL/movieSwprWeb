@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TvInfo } from '../app-swiper/app-swiper.component';
+import { IdObject, TvInfo } from '../app-swiper/app-swiper.component';
 import { DbService } from '../db.service';
 
 @Component({
@@ -9,19 +9,39 @@ import { DbService } from '../db.service';
 })
 export class WatchComponent implements OnInit {
   public watch: TvInfo[] = [];
+  public data: TvInfo[] = [];
+  public watchIds: IdObject[] = [];
   constructor(private db: DbService) { }
 
-  ngOnInit(): void {
-    this.onGetWatch();
+  async ngOnInit(): Promise<void> {
+    this.onGetData();
   }
 
-  onGetWatch() {
+  async onGetWatch() {
     this.db.getWatch().subscribe({
       next: (v) => {
-        this.watch = v;
+        this.watchIds = v;
       },
       error: (e) => console.error(e),
-      complete: () => console.info('complete')
+      complete: () => this.createWatch()
     });
+  }
+  async onGetData() {
+    this.db.getData().subscribe({
+      next: (v) => {
+        this.data = v;
+      },
+      error: (e) => console.error(e),
+      complete: () => this.onGetWatch()
+    });
+
+  }
+  createWatch() {
+    console.log("create watch");
+
+    const watch = this.watchIds.map(e => this.data.find(v => v.id == e.id))as TvInfo[];
+    console.log(watch);
+
+    this.watch = watch;
   }
 }

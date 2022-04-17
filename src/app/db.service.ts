@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
-import { failedId, TvInfo } from './app-swiper/app-swiper.component';
+import { IdObject, TvInfo } from './app-swiper/app-swiper.component';
 
 @Injectable({
   providedIn: 'root'
@@ -25,10 +25,10 @@ export class DbService {
     );
   }
 
-  getFailedId(): Observable<failedId[]> {
-    return this.http.get<failedId[]>(`${this.dbUrl}/failedId`);
+  getFailedId(): Observable<IdObject[]> {
+    return this.http.get<IdObject[]>(`${this.dbUrl}/failedId`);
   }
-  postFailedId(data: failedId) {
+  postFailedId(data: IdObject) {
     this.http.post(`${this.dbUrl}/failedId`, data).subscribe({
       error: (e) => { console.log(e); },
       complete: () => { console.log("post complete"); }
@@ -37,10 +37,10 @@ export class DbService {
   }
 
 
-  getSeen(): Observable<TvInfo[]> {
-    return this.http.get<TvInfo[]>(`${this.dbUrl}/seen`);
+  getSeen(): Observable<IdObject[]> {
+    return this.http.get<IdObject[]>(`${this.dbUrl}/seen`);
   }
-  postSeen(data: TvInfo) {
+  postSeen(data: IdObject) {
     console.log("post seen");
     this.http.post(`${this.dbUrl}/seen`, data).subscribe({
       error: (e) => { console.log(e); },
@@ -49,10 +49,10 @@ export class DbService {
     );
   }
 
-  getWatch(): Observable<TvInfo[]> {
-    return this.http.get<TvInfo[]>(`${this.dbUrl}/watch`);
+  getWatch(): Observable<IdObject[]> {
+    return this.http.get<IdObject[]>(`${this.dbUrl}/watch`);
   }
-  postWatch(data: TvInfo) {
+  postWatch(data: IdObject) {
     console.log("post watch");
     this.http.post(`${this.dbUrl}/watch`, data).subscribe({
       error: (e) => { console.log(e); },
@@ -61,10 +61,10 @@ export class DbService {
     );
   }
 
- getFav(): Observable<TvInfo[]> {
-    return this.http.get<TvInfo[]>(`${this.dbUrl}/favorite`);
+ getFav(): Observable<IdObject[]> {
+    return this.http.get<IdObject[]>(`${this.dbUrl}/favorite`);
   }
-  postFav(data: TvInfo) {
+  postFav(data: IdObject) {
     console.log("post watch");
     this.http.post(`${this.dbUrl}/favorite`, data).subscribe({
       error: (e) => { console.log(e); },

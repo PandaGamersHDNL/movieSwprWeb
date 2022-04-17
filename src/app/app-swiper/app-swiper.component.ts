@@ -15,10 +15,10 @@ export class AppSwiperComponent implements OnInit {
   //using these so we don't have to make get calls each time
   public bApi: boolean = false;
   public data: TvInfo[] = [];
-  public seen: TvInfo[] = [];
-  public watch: TvInfo[] = [];
-  public fav: TvInfo[] = [];
-  public failed: failedId[] = [];
+  public seen: IdObject[] = [];
+  public watch: IdObject[] = [];
+  public fav: IdObject[] = [];
+  public failed: IdObject[] = [];
 
   constructor(private db: DbService) {
     this.tvInfo = {}
@@ -37,9 +37,11 @@ export class AppSwiperComponent implements OnInit {
 
   async onGetData(): Promise<TvInfo[]> {
     this.db.getData().subscribe({
-      next: (v) => {
+      next: async (v) => {
         this.data = v;
         this.tvInfo = v[genRandomIndex(v.length)];
+        console.log(await this.checkOverlap("tt6550826"));
+
       },
       error: (e) => console.error(e),
       complete: () => console.info('complete')
@@ -74,20 +76,16 @@ export class AppSwiperComponent implements OnInit {
       next: (v) => {
         const day = new Date(v.date);
         day.setTime(day.getTime() + day.getTimezoneOffset() * 60 * 1000)
-        console.log(day);
+
         const today = new Date();
         today.setTime(today.getTime() + today.getTimezoneOffset() * 60 * 1000)
-        console.log(today);
 
-        if (day.getTime() < today.getTime() &&
-          day.getFullYear() <= today.getFullYear() &&
-          day.getMonth() <= today.getMonth() &&
-          day.getDay() < today.getDay()) {
-          this.bApi = true;
-        }
-        if(!this.bApi) {
+        if(dateGtrDate(today, day))
+          this.bApi = true
+        else
           alert("the api can not request any more, these are from db (dublicates are possible)")
-        }
+        console.log(this.bApi);
+
 
       },
       error: (e) => console.error(e),
@@ -130,25 +128,32 @@ export class AppSwiperComponent implements OnInit {
   }
 
   async buttonClicked(button: EventButtons) {
-    const info = this.tvInfo;
-    this.tvInfo = { title: "adding to db" };
-    switch (button) {
-      case EventButtons.no:
-        break;
-      case EventButtons.seen: {
-        this.db.postSeen(info);
-        this.seen.push(info);
-        break;
+    let info: IdObject;
+    if (this.tvInfo.id)
+      info = { id: this.tvInfo.id };
+    else {
+      info = { id: "Something went wrong, tried to add non existent ID" };
+    }
+    if (info.id != undefined) {
+      this.tvInfo = { title: "adding to db" };
+      switch (button) {
+        case EventButtons.no:
+          break;
+        case EventButtons.seen: {
+          this.db.postSeen(info);
+          this.seen.push(info);
+          break;
+        }
+        case EventButtons.watchLater: {
+          this.db.postWatch(info);
+          this.watch.push(info);
+          break;
+        }
+        case EventButtons.favorite:
+          this.db.postFav(info);
+          this.fav.push(info);
+          break;
       }
-      case EventButtons.watchLater: {
-        this.db.postWatch(info);
-        this.watch.push(info);
-        break;
-      }
-      case EventButtons.favorite:
-        this.db.postFav(info);
-        this.fav.push(info);
-        break;
     }
     this.tvInfo = { title: "Loading new movie" }
     this.tvInfo = await this.genCheckedInfo();
@@ -178,6 +183,7 @@ export class AppSwiperComponent implements OnInit {
     let bNewInfo;
     if (this.bApi) {
       do {
+        try {
         bNewInfo = false;
         const id = genTitleId()
         if (await this.checkOverlap(id)) {
@@ -187,8 +193,7 @@ export class AppSwiperComponent implements OnInit {
             return false;
           }
           tvInfo = this.data.find(findTvInfo);
-          if (!tvInfo) {
-
+          if (tvInfo == undefined) {
             tvInfo = await this.genCheckedInfoAPI(id);
             bNewInfo = true;
             if (tvInfo.type == "TVEpisode" && tvInfo.id) {
@@ -197,15 +202,18 @@ export class AppSwiperComponent implements OnInit {
               this.db.postFailedId({ id: tvInfo.id });
               tvInfo = undefined;
             }
-
           }
         }
+      } catch {
+        tvInfo = this.data[genRandomIndex(this.data.length)]
+        break;
+      }
       } while (tvInfo == undefined || !tvInfo.title)
     }
     else {
       do {
         tvInfo = this.data[genRandomIndex(this.data.length)]
-      } while(tvInfo.id == undefined || (await this.checkOverlap(tvInfo.id)) == false);
+      } while (tvInfo.id == undefined || (await this.checkOverlap(tvInfo.id)) == false);
     }
     if (bNewInfo) {
       this.data.push(tvInfo);
@@ -223,6 +231,7 @@ export class AppSwiperComponent implements OnInit {
       this.db.postApiFail();
       this.bApi = false;
       alert("maximum api requests reached, all movies will come from db");
+      throw Error("Max api req reached");
     }
     return tvInfo;
   }
@@ -239,6 +248,28 @@ function genTitleId(): string {
   return id;
 }
 
+/**
+ * if big date is > smal date -> true
+ * only in y m and d
+ * @param bigDate
+ * @param smalDate
+ */
+function dateGtrDate(bigDate: Date , smalDate: Date ) {
+  if(bigDate.getTime() > smalDate.getTime()) {
+    if(bigDate.getFullYear() > smalDate.getFullYear()) {
+      return true;
+    } else if (bigDate.getFullYear() == smalDate.getFullYear()) {
+      if(bigDate.getMonth() > smalDate.getMonth()){
+        return true;
+      } else if (bigDate.getMonth() == smalDate.getMonth()) {
+        if(bigDate.getDate() > smalDate.getDate()){
+          return true;
+        }
+      }
+    }
+  }
+  return false;
+}
 //TODO add seed?
 function genDigit(): number {
   return Math.floor(Math.random() * 10);
@@ -293,6 +324,6 @@ function genRandomIndex(length: number): number {
   return Math.floor(Math.random() * length)
 }
 
-export interface failedId {
+export interface IdObject {
   id: string
 }
