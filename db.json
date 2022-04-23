@@ -10903,6 +10903,198 @@
       "tvSeriesInfo": null,
       "tvEpisodeInfo": null,
       "errorMessage": null
+    },
+    {
+      "id": "tt8896754",
+      "title": "It Turns on Love",
+      "originalTitle": "",
+      "fullTitle": "It Turns on Love (2018)",
+      "type": "Movie",
+      "year": "2018",
+      "image": "https://imdb-api.com/images/original/MV5BZWJmYjlkOTQtMjY2MC00MTQ5LWI0ZjktMmNlMDFmOTRlMDg5XkEyXkFqcGdeQXVyMTk4MjM0MTQ@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2018-04-05",
+      "runtimeMins": "PT12M",
+      "runtimeStr": "PT12M",
+      "plot": "The owner of a car repair garage is attempting to teach his youngest son the work ethic required to be a successful mechanic. Although the son has been working for several weeks, he seems to dismiss his father's efforts at instruction. The son can't seem to remember the simplest processes, what oil to use, how to secure the oil filter, and the correct tools to use. The father gets more and more annoyed as the day goes on and his son becomes distant. Going into great detail about what's required of a mechanic, the father eventually looses his temper. His son apparently is more concerned with his older brother's financial problems than his instruction. The younger son tries a variety of tactics to draw his father into a more forgiving state of mind. This fails as the father monologues about how many times the brother has failed, how lazy the brother is, and the number of times he had to \"bail him out\" due to the older son's poor work ethic. The younger son is determined to hammer home the difficulties of being a success in the eyes of the father. All his attempts to mend the poor relationship between his brother and father fall on deaf ears. The father finally goes \"beast mode\" and threatens his young son with a wrench. Holding the wrench high, yelling and cursing, the father realizes his has become intractable in his work, with his family, and standing before his young son. This realization that he is too angry, too unforgiving, and even violent brings a watershed of realization. Embarrassed by his action, the father attempts to reassemble the tools that had been thrown to the floor. As his mood shifts, the man realizes his resistance to the words of the son are no different than his son's his own resistance to his instruction. Both are personal defects hard to overcome by yelling, demanding, and finally anger. Although the father still resists being this compassionate, in the end he considers what love really means. He has to step beyond his own demanding work ethic to finally see his family through the eyes of his youngest son. A bond is formed between father and son, and the chance to heal his relationships becomes a priority, a requirement more important to him than his own work ethic and the lack there of for both his sons.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Steve Cleberg",
+      "directorList": [
+        {
+          "id": "nm3068261",
+          "name": "Steve Cleberg"
+        }
+      ],
+      "writers": "Steve Cleberg, Betty Peterson",
+      "writerList": [
+        {
+          "id": "nm3068261",
+          "name": "Steve Cleberg"
+        },
+        {
+          "id": "nm10073366",
+          "name": "Betty Peterson"
+        }
+      ],
+      "stars": "Knox Isham, Mark Isham",
+      "starList": [
+        {
+          "id": "nm10073364",
+          "name": "Knox Isham"
+        },
+        {
+          "id": "nm5528649",
+          "name": "Mark Isham"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm10073364",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Knox Isham",
+          "asCharacter": "Sonas Son"
+        },
+        {
+          "id": "nm5528649",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Mark Isham",
+          "asCharacter": "Fatheras Father"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Short, Drama",
+      "genreList": [
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Drama",
+          "value": "Drama"
+        }
+      ],
+      "companies": "Somerset Community College Theatre Digital Video Productions",
+      "companyList": [
+        {
+          "id": "co0323038",
+          "name": "Somerset Community College Theatre Digital Video Productions"
+        }
+      ],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0378977",
+      "title": "Viaggio di S.M. il Re in Somalia (novembre-dicembre 1934)",
+      "originalTitle": "",
+      "fullTitle": "Viaggio di S.M. il Re in Somalia (novembre-dicembre 1934) (1934)",
+      "type": "Movie",
+      "year": "1934",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": null,
+      "runtimeMins": null,
+      "runtimeStr": null,
+      "plot": "",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "",
+      "directorList": [],
+      "writers": "",
+      "writerList": [],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Documentary",
+      "genreList": [
+        {
+          "key": "Documentary",
+          "value": "Documentary"
+        }
+      ],
+      "companies": "Istituto Luce",
+      "companyList": [
+        {
+          "id": "co0065177",
+          "name": "Istituto Luce"
+        }
+      ],
+      "countries": "Italy",
+      "countryList": [
+        {
+          "key": "Italy",
+          "value": "Italy"
+        }
+      ],
+      "languages": "Italian",
+      "languageList": [
+        {
+          "key": "Italian",
+          "value": "Italian"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "year 1934,1930s,20th century",
+      "keywordList": [
+        "year 1934",
+        "1930s",
+        "20th century"
+      ],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
     }
   ]
 }

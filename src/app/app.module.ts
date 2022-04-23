@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { WatchComponent } from './watch/watch.component';
+import { DisplayInfoComponent } from './display-info/display-info.component';
 
 @NgModule({
 	declarations: [
@@ -17,6 +18,7 @@ import { WatchComponent } from './watch/watch.component';
 		NavComponent,
 		ButtonsComponent,
   WatchComponent,
+  DisplayInfoComponent,
 	],
 	imports: [
 		BrowserModule,
