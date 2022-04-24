@@ -2,7 +2,7 @@
   <!--searchbar + sort options?-->
   <!--small img of movie + title?-->
 <div id="items">
-  <a id="item" *ngFor="let item of watch" href="./watch/{{item.id}}">
+  <a id="item" *ngFor="let item of watch" href="./details/{{item.id}}">
     <h3>{{item.title}}</h3>
     <img src="{{item.image}}" />
   </a>

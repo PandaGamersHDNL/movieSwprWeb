@@ -1,0 +1,8 @@
+div {
+  border: 2px solid black;
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--BoxBackground);
+  color: var(--Textcolor);
+}
