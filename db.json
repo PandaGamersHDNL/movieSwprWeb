@@ -452,6 +452,30 @@
     },
     {
       "id": "tt1596664"
+    },
+    {
+      "id": "tt1457595"
+    },
+    {
+      "id": "tt3859346"
+    },
+    {
+      "id": "tt9768626"
+    },
+    {
+      "id": "tt2121438"
+    },
+    {
+      "id": "tt2161903"
+    },
+    {
+      "id": "tt0604928"
+    },
+    {
+      "id": "tt2001817"
+    },
+    {
+      "id": "tt7553228"
     }
   ],
   "seen": [],
@@ -11841,7 +11865,8 @@
       ],
       "tvSeriesInfo": null,
       "tvEpisodeInfo": null,
-      "errorMessage": null
+      "errorMessage": null,
+      "comment": ""
     },
     {
       "id": "tt6235120",
@@ -12688,6 +12713,322 @@
       "keywordList": [],
       "similars": [],
       "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt3623620",
+      "title": "Eight",
+      "originalTitle": "",
+      "fullTitle": "Eight (2011)",
+      "type": "Movie",
+      "year": "2011",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": null,
+      "runtimeMins": "PT8M",
+      "runtimeStr": "PT8M",
+      "plot": "",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "Awards, 1 nomination",
+      "directors": "Devrim Erdogan",
+      "directorList": [
+        {
+          "id": "nm1458475",
+          "name": "Devrim Erdogan"
+        }
+      ],
+      "writers": "",
+      "writerList": [],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Short, Drama",
+      "genreList": [
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Drama",
+          "value": "Drama"
+        }
+      ],
+      "companies": "",
+      "companyList": [],
+      "countries": "Turkey",
+      "countryList": [
+        {
+          "key": "Turkey",
+          "value": "Turkey"
+        }
+      ],
+      "languages": "Turkish",
+      "languageList": [
+        {
+          "key": "Turkish",
+          "value": "Turkish"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt2078764",
+      "title": "Vorobey, kotoryy umel derzhat slovo",
+      "originalTitle": "",
+      "fullTitle": "Vorobey, kotoryy umel derzhat slovo (2010)",
+      "type": "Movie",
+      "year": "2010",
+      "image": "https://imdb-api.com/images/original/MV5BM2IzOTg0OGUtYTU2ZS00NmIyLTg3YjEtMWY4MzkyZjZiMDQ0XkEyXkFqcGdeQXVyMTI4OTE5NDg3._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": null,
+      "runtimeMins": "PT7M",
+      "runtimeStr": "PT7M",
+      "plot": "A story about a little sparrow that could keep his word.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Dmitriy Geller",
+      "directorList": [
+        {
+          "id": "nm1445446",
+          "name": "Dmitriy Geller"
+        }
+      ],
+      "writers": "Roza Khusnutdinova",
+      "writerList": [
+        {
+          "id": "nm0452037",
+          "name": "Roza Khusnutdinova"
+        }
+      ],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Animation, Short, Family",
+      "genreList": [
+        {
+          "key": "Animation",
+          "value": "Animation"
+        },
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Family",
+          "value": "Family"
+        }
+      ],
+      "companies": "",
+      "companyList": [],
+      "countries": "Russia",
+      "countryList": [
+        {
+          "key": "Russia",
+          "value": "Russia"
+        }
+      ],
+      "languages": "Russian",
+      "languageList": [
+        {
+          "key": "Russian",
+          "value": "Russian"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": "6.7",
+      "imDbRatingVotes": "14",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt8469058",
+      "title": "Pamtri",
+      "originalTitle": "",
+      "fullTitle": "Pamtri (TV Series 2016– )",
+      "type": "TVSeries",
+      "year": "2016",
+      "image": "https://imdb-api.com/images/original/MV5BOTE4ODRmMDItMDRhMy00ZDYxLThhYWMtOTZmOWM4NDUzNzI5XkEyXkFqcGdeQXVyNjk1NzUxMDQ@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2016-08-20",
+      "runtimeMins": null,
+      "runtimeStr": null,
+      "plot": "A 666 year old man named Santiago has a killing fetish. In the surreal world, see celebrity characters get shot and killed by him in the most horrifying way.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "",
+      "directorList": [],
+      "writers": "",
+      "writerList": [],
+      "stars": "Us Male Voice, Us Female Voice",
+      "starList": [
+        {
+          "id": "nm11565826",
+          "name": "Us Male Voice"
+        },
+        {
+          "id": "nm11565827",
+          "name": "Us Female Voice"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm11565826",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Us Male Voice",
+          "asCharacter": "Santiagoas Santiago"
+        },
+        {
+          "id": "nm11565827",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Us Female Voice",
+          "asCharacter": "Doraas Dora"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Animation, Comedy, Horror",
+      "genreList": [
+        {
+          "key": "Animation",
+          "value": "Animation"
+        },
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        },
+        {
+          "key": "Horror",
+          "value": "Horror"
+        }
+      ],
+      "companies": "",
+      "companyList": [],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": "TV-14",
+      "imDbRating": "8.6",
+      "imDbRatingVotes": "17",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": "Santiago!",
+      "keywords": "celebrity",
+      "keywordList": [
+        "celebrity"
+      ],
+      "similars": [
+        {
+          "id": "tt1230180",
+          "title": "The Angry Video Game Nerd",
+          "image": "https://imdb-api.com/images/original/MV5BYzExNjRkZmItYzFlNi00ZWI5LWE2MTEtNTcyZDQ1Y2QyZjBiXkEyXkFqcGdeQXVyNjg3MDM4Mzc@._V1_Ratio0.7053_AL_.jpg",
+          "imDbRating": "8.6"
+        },
+        {
+          "id": "tt9076578",
+          "title": "Surreal entertainment",
+          "image": "https://imdb-api.com/images/original/MV5BMDE1NzY1MzYtOTM0NS00ZGU3LTgwOTMtOTg3MGUxYWQzNDhjXkEyXkFqcGdeQXVyMjQxNzM0MjI@._V1_Ratio1.7778_AL_.jpg",
+          "imDbRating": "8.6"
+        },
+        {
+          "id": "tt7029396",
+          "title": "SMG4",
+          "image": "https://imdb-api.com/images/original/MV5BMGM3MTQyYzUtYzA4Zi00MzdiLWI3Y2MtNDY1OGJkYWU5OGQ5XkEyXkFqcGdeQXVyMTI1NjExNTg3._V1_Ratio0.6957_AL_.jpg",
+          "imDbRating": "8.3"
+        },
+        {
+          "id": "tt4067420",
+          "title": "Super Mario Logan",
+          "image": "https://imdb-api.com/images/original/MV5BMjU5ODczYzctY2Y0Ni00NGYzLWI3ZTktOWI0ZmYxODMyZmJlXkEyXkFqcGdeQXVyNTE4MzE3ODc@._V1_Ratio1.0048_AL_.jpg",
+          "imDbRating": "6.3"
+        },
+        {
+          "id": "tt0462538",
+          "title": "The Simpsons Movie",
+          "image": "https://imdb-api.com/images/original/MV5BMTgxMDczMTA5N15BMl5BanBnXkFtZTcwMzk1MzMzMw@@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "7.3"
+        },
+        {
+          "id": "tt0182576",
+          "title": "Family Guy",
+          "image": "https://imdb-api.com/images/original/MV5BODEwZjEzMjAtNjQxMy00Yjc4LWFlMDAtYjhjZTAxNDU3OTg3XkEyXkFqcGdeQXVyOTM2NTM4MjA@._V1_Ratio0.7536_AL_.jpg",
+          "imDbRating": "8.2"
+        }
+      ],
+      "tvSeriesInfo": {
+        "yearEnd": "",
+        "creators": "Pamtri",
+        "creatorList": [
+          {
+            "id": "nm9864895",
+            "name": "Pamtri"
+          }
+        ],
+        "seasons": [
+          "1",
+          "2"
+        ]
+      },
       "tvEpisodeInfo": null,
       "errorMessage": null
     }

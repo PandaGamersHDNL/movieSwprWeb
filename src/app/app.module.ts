@@ -11,6 +11,7 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { WatchComponent } from './watch/watch.component';
 import { DisplayInfoComponent } from './display-info/display-info.component';
 import { InfoDetailsComponent } from './info-details/info-details.component';
+import { TitlePipe } from './title.pipe';
 
 @NgModule({
 	declarations: [
@@ -21,6 +22,7 @@ import { InfoDetailsComponent } from './info-details/info-details.component';
   WatchComponent,
   DisplayInfoComponent,
   InfoDetailsComponent,
+  TitlePipe,
 	],
 	imports: [
 		BrowserModule,
