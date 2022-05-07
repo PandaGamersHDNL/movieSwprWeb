@@ -61,7 +61,8 @@ export class DbService {
     );
   }
 
- getFav(): Observable<IdObject[]> {
+
+  getFav(): Observable<IdObject[]> {
     return this.http.get<IdObject[]>(`${this.dbUrl}/favorite`);
   }
   postFav(data: IdObject) {
@@ -83,5 +84,13 @@ export class DbService {
       complete: () => { console.log("post complete"); }
     }
     );
+  }
+  putData(tvInfo: TvInfo) {
+    this.http.put(`${this.dbUrl}/data/${tvInfo.id}`, tvInfo).subscribe({
+      error: (e) => { console.log(e); },
+      complete: () => { console.log("post complete"); }
+    }
+    );
+
   }
 }

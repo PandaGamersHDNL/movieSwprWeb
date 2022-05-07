@@ -1,3 +1,10 @@
 <div>
 <app-display-info [tvInfo]="tvInfo"></app-display-info>
+<textarea #comment rows="5" cols="80">{{tvInfo.comment}}</textarea>
+<button mat-fab color="warn" aria-label="no" (click)="save()">
+  <mat-icon>save</mat-icon>
+</button>
+<button mat-fab color="warn" aria-label="no" (click)="cancel()">
+  <mat-icon>cancel</mat-icon>
+</button>
 </div>

@@ -278,7 +278,8 @@ export interface TvInfo {
   genres?: string,
   languages?: string,
   contentRating?: string,
-  imDbRating?: string
+  imDbRating?: string,
+  comment?: string
 }
 /*async function genDummyToConsole(): Promise<void> {
 
