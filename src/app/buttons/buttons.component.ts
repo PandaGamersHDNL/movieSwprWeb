@@ -9,8 +9,8 @@ import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 export class ButtonsComponent implements OnInit {
   @Output() buttonClicked = new EventEmitter<EventButtons>();
   @Input() bEnabled: boolean = true
-  @Input("highlight") toHighlight: EventButtons = EventButtons.no; //no is never highlighted
-
+  @Input() toHighlight: EventButtons = EventButtons.no; //no is never highlighted
+  public btns = EventButtons ;
   constructor() { }
 
   ngOnInit(): void {
@@ -31,10 +31,12 @@ export class ButtonsComponent implements OnInit {
   }
 
   highlight(button: EventButtons){
-    if(this.toHighlight == button) {
-      return "warn"
+    console.log(button);
+    if(this.toHighlight === button && button != EventButtons.no) {
+
+      return "accent"
     } else {
-      return "primairy"
+      return "primary"
     }
   }
 }

@@ -572,24 +572,38 @@
     },
     {
       "id": "tt7352196"
+    },
+    {
+      "id": "tt1184657"
+    },
+    {
+      "id": "tt6986216"
+    },
+    {
+      "id": "tt7133318"
+    },
+    {
+      "id": "tt0987143"
     }
   ],
-  "seen": [],
+  "seen": [
+    {
+      "id": "tt5845018"
+    }
+  ],
   "watch": [
     {
       "id": "tt1937290"
     },
     {
       "id": "tt1344779"
-    },
-    {
-      "id": "Something went wrong, tried to add non existent ID"
-    },
-    {
-      "id": "tt5845018"
     }
   ],
-  "favorite": [],
+  "favorite": [
+    {
+      "id": "tt1344779"
+    }
+  ],
   "data": [
     {
       "id": "tt7953706",
@@ -14695,6 +14709,91 @@
       "keywordList": [],
       "similars": [],
       "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt4780868",
+      "title": "Milkcrates",
+      "originalTitle": "",
+      "fullTitle": "Milkcrates (TV Series 2016– )",
+      "type": "TVSeries",
+      "year": "2016",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": null,
+      "runtimeMins": null,
+      "runtimeStr": null,
+      "plot": "",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "",
+      "directorList": [],
+      "writers": "",
+      "writerList": [],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Action, Comedy",
+      "genreList": [
+        {
+          "key": "Action",
+          "value": "Action"
+        },
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        }
+      ],
+      "companies": "",
+      "companyList": [],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "tv mini series",
+      "keywordList": [
+        "tv mini series"
+      ],
+      "similars": [],
+      "tvSeriesInfo": {
+        "yearEnd": "",
+        "creators": "Alexander Norris",
+        "creatorList": [
+          {
+            "id": "nm7393075",
+            "name": "Alexander Norris"
+          }
+        ],
+        "seasons": []
+      },
       "tvEpisodeInfo": null,
       "errorMessage": null
     }

@@ -106,12 +106,8 @@ export class AppSwiperComponent implements OnInit {
   }
 
   async buttonClicked(button: EventButtons) {
-    let info: IdObject;
-    if (this.tvInfo.id)
-      info = { id: this.tvInfo.id };
-    else {
-      info = { id: "Something went wrong, tried to add non existent ID" };
-    }
+    const info: IdObject = { id: this.tvInfo.id };
+
     if (info.id != undefined) {
       this.tvInfo = { title: "adding to db" };
       switch (button) {
@@ -306,5 +302,5 @@ function genRandomIndex(length: number): number {
 }
 
 export interface IdObject {
-  id: string
+  id?: string
 }
