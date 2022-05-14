@@ -476,21 +476,114 @@
     },
     {
       "id": "tt7553228"
+    },
+    {
+      "id": "tt7145380"
+    },
+    {
+      "id": "tt7864560"
+    },
+    {
+      "id": "tt1667202"
+    },
+    {
+      "id": "tt8202846"
+    },
+    {
+      "id": "tt5039176"
+    },
+    {
+      "id": "tt8299710"
+    },
+    {
+      "id": "tt7234848"
+    },
+    {
+      "id": "tt2127445"
+    },
+    {
+      "id": "tt1977229"
+    },
+    {
+      "id": "tt1121546"
+    },
+    {
+      "id": "tt5992964"
+    },
+    {
+      "id": "tt3628022"
+    },
+    {
+      "id": "tt9074978"
+    },
+    {
+      "id": "tt0529025"
+    },
+    {
+      "id": "tt2801348"
+    },
+    {
+      "id": "tt0541343"
+    },
+    {
+      "id": "tt7578324"
+    },
+    {
+      "id": "tt1300801"
+    },
+    {
+      "id": "tt7516420"
+    },
+    {
+      "id": "tt3750542"
+    },
+    {
+      "id": "tt7901674"
+    },
+    {
+      "id": "tt0608014"
+    },
+    {
+      "id": "tt6640176"
+    },
+    {
+      "id": "tt3198018"
+    },
+    {
+      "id": "tt0391239"
+    },
+    {
+      "id": "tt8175828"
+    },
+    {
+      "id": "tt5174188"
+    },
+    {
+      "id": "tt7280016"
+    },
+    {
+      "id": "tt8234404"
+    },
+    {
+      "id": "tt1099637"
+    },
+    {
+      "id": "tt4580356"
+    },
+    {
+      "id": "tt7352196"
     }
   ],
   "seen": [],
   "watch": [
     {
-      "id": "tt3978348"
+      "id": "tt1937290"
     },
     {
-      "id": "tt4929416"
+      "id": "tt1344779"
     },
     {
-      "id": "tt0073283"
-    },
-    {
-      "id": "tt3108244"
+      "id": "Something went wrong, tried to add non existent ID"
     }
   ],
   "favorite": [],
@@ -13029,6 +13122,1457 @@
           "2"
         ]
       },
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt1017893",
+      "title": "Chabada, la vie des hommes",
+      "originalTitle": "",
+      "fullTitle": "Chabada, la vie des hommes (2007)",
+      "type": "Movie",
+      "year": "2007",
+      "image": "https://imdb-api.com/images/original/MV5BODIxMzlmMTQtZmE1Yi00MjBjLTgwMWYtNDRiMzNlNGY3ZWY1XkEyXkFqcGdeQXVyNzI4MDMyMTU@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2007-05-09",
+      "runtimeMins": "PT57M",
+      "runtimeStr": "PT57M",
+      "plot": "",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Philippe Crnogorac",
+      "directorList": [
+        {
+          "id": "nm2627388",
+          "name": "Philippe Crnogorac"
+        }
+      ],
+      "writers": "",
+      "writerList": [],
+      "stars": "Bertrand Siess, Patrick Tamarel",
+      "starList": [
+        {
+          "id": "nm2627477",
+          "name": "Bertrand Siess"
+        },
+        {
+          "id": "nm2630489",
+          "name": "Patrick Tamarel"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm2627477",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Bertrand Siess",
+          "asCharacter": "Selfas Self"
+        },
+        {
+          "id": "nm2630489",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Patrick Tamarel",
+          "asCharacter": "Selfas Self"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Documentary",
+      "genreList": [
+        {
+          "key": "Documentary",
+          "value": "Documentary"
+        }
+      ],
+      "companies": "Pyramide Production, France 3 Sud, Regard Nomade",
+      "companyList": [
+        {
+          "id": "co0207246",
+          "name": "Pyramide Production"
+        },
+        {
+          "id": "co0172990",
+          "name": "France 3 Sud"
+        },
+        {
+          "id": "co0207686",
+          "name": "Regard Nomade"
+        }
+      ],
+      "countries": "France",
+      "countryList": [
+        {
+          "key": "France",
+          "value": "France"
+        }
+      ],
+      "languages": "French",
+      "languageList": [
+        {
+          "key": "French",
+          "value": "French"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt7584012",
+      "title": "It's Been A Weird Week",
+      "originalTitle": "",
+      "fullTitle": "It's Been A Weird Week (2017)",
+      "type": "Movie",
+      "year": "2017",
+      "image": "https://imdb-api.com/images/original/MV5BODg0MmQ5YjAtZjNkOS00NGFmLThiYmQtYWEzZjIzOWYwZDMxXkEyXkFqcGdeQXVyNTQ0NTM2NDU@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": null,
+      "runtimeMins": "PT8M",
+      "runtimeStr": "PT8M",
+      "plot": "An awkward twentysomething navigates strange and sexual encounters over the course of a few days.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Stanley Swindling",
+      "directorList": [
+        {
+          "id": "nm8379625",
+          "name": "Stanley Swindling"
+        }
+      ],
+      "writers": "Stanley Swindling",
+      "writerList": [
+        {
+          "id": "nm8379625",
+          "name": "Stanley Swindling"
+        }
+      ],
+      "stars": "Brittany Grant, Vanessa John, Matt Josbena",
+      "starList": [
+        {
+          "id": "nm8651811",
+          "name": "Brittany Grant"
+        },
+        {
+          "id": "nm9343949",
+          "name": "Vanessa John"
+        },
+        {
+          "id": "nm7354451",
+          "name": "Matt Josbena"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm8651811",
+          "image": "https://imdb-api.com/images/original/MV5BZWRlNzk3ZDUtZGU3OC00N2JlLWJhN2ItNzA4MWI2NzVhNzU5XkEyXkFqcGdeQXVyNTgxODE5OTU@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Brittany Grant",
+          "asCharacter": "Kateas Kate"
+        },
+        {
+          "id": "nm9343949",
+          "image": "https://imdb-api.com/images/original/MV5BYjg0MGZkMzEtMTllMy00OGEyLWI2ZTItYTU0YWU1NTJlOTVlXkEyXkFqcGdeQXVyNjAyMTIxMDg@._V1_Ratio1.4857_AL_.jpg",
+          "name": "Vanessa John",
+          "asCharacter": "Angieas Angie"
+        },
+        {
+          "id": "nm7354451",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Matt Josbena",
+          "asCharacter": "Kevinas Kevin"
+        },
+        {
+          "id": "nm9387597",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Adam Manno",
+          "asCharacter": "Birthday Boyas Birthday Boy"
+        },
+        {
+          "id": "nm8379625",
+          "image": "https://imdb-api.com/images/original/MV5BZmM1MzdhMzktZTE5ZC00OTZkLWIzYjAtMWM0NGVmYjQ5ZWJmXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Stanley Swindling",
+          "asCharacter": "Stanas Stan"
+        },
+        {
+          "id": "nm8068057",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Ryan Utterback",
+          "asCharacter": "Bradas Brad"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Short, Comedy",
+      "genreList": [
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        }
+      ],
+      "companies": "",
+      "companyList": [],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null,
+      "comment": "kinda bad"
+    },
+    {
+      "id": "tt0304633",
+      "title": "Rio da Cruz",
+      "originalTitle": "",
+      "fullTitle": "Rio da Cruz (1988)",
+      "type": "Movie",
+      "year": "1988",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": null,
+      "runtimeMins": "PT40M",
+      "runtimeStr": "PT40M",
+      "plot": "Documentary on social differences in Rio de Janeiro, Brazil.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Maria Luiza d'Aboim",
+      "directorList": [
+        {
+          "id": "nm1101259",
+          "name": "Maria Luiza d'Aboim"
+        }
+      ],
+      "writers": "",
+      "writerList": [],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Documentary, Short",
+      "genreList": [
+        {
+          "key": "Documentary",
+          "value": "Documentary"
+        },
+        {
+          "key": "Short",
+          "value": "Short"
+        }
+      ],
+      "companies": "",
+      "companyList": [],
+      "countries": "Brazil",
+      "countryList": [
+        {
+          "key": "Brazil",
+          "value": "Brazil"
+        }
+      ],
+      "languages": "Portuguese",
+      "languageList": [
+        {
+          "key": "Portuguese",
+          "value": "Portuguese"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0804338",
+      "title": "The Stronger Man",
+      "originalTitle": "",
+      "fullTitle": "The Stronger Man (1915)",
+      "type": "Movie",
+      "year": "1915",
+      "image": "https://imdb-api.com/images/original/MV5BYTYzZTY5NmMtNDlkYi00MTE2LTk5MzUtOTI4OWQ5NWJiMzYzXkEyXkFqcGdeQXVyMDUyOTUyNQ@@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "1915-09-11",
+      "runtimeMins": null,
+      "runtimeStr": null,
+      "plot": "Cecil Graham learns that her husband is faithless. They agree to be divorced. At a house-party Cecil meets James Long, with whom she flirts to divert her mind from her troubles. A love affair develops between them, but they soon t...",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "",
+      "directorList": [],
+      "writers": "",
+      "writerList": [],
+      "stars": "Irene Hunt, J. Farrell MacDonald, Jack Brammall",
+      "starList": [
+        {
+          "id": "nm0402475",
+          "name": "Irene Hunt"
+        },
+        {
+          "id": "nm0531759",
+          "name": "J. Farrell MacDonald"
+        },
+        {
+          "id": "nm0104251",
+          "name": "Jack Brammall"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0402475",
+          "image": "https://imdb-api.com/images/original/MV5BYzU5M2I2MzUtZDZiNy00YzExLTg5YjctYTljZWYzOGJlZDZkXkEyXkFqcGdeQXVyMDUyOTUyNQ@@._V1_Ratio1.2857_AL_.webp",
+          "name": "Irene Hunt",
+          "asCharacter": "Cecil Grahamas Cecil Graham"
+        },
+        {
+          "id": "nm0531759",
+          "image": "https://imdb-api.com/images/original/MV5BYjVmOWRhZmYtZGQzNS00MTBiLTg5MTEtZGVjMjBhNzY3ZTRjXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_Ratio1.0000_AL_.webp",
+          "name": "J. Farrell MacDonald",
+          "asCharacter": "Cecil's First Husbandas Cecil's First Husband"
+        },
+        {
+          "id": "nm0104251",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Jack Brammall",
+          "asCharacter": "James Longas James Long"
+        },
+        {
+          "id": "nm0780739",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Allan Sears",
+          "asCharacter": "Stanley Hargrave - Cecil's Second Husbandas Stanley Hargrave - Cecil's Second Husband"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Short, Drama",
+      "genreList": [
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Drama",
+          "value": "Drama"
+        }
+      ],
+      "companies": "Reliance Film Company",
+      "companyList": [
+        {
+          "id": "co0086336",
+          "name": "Reliance Film Company"
+        }
+      ],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "None, English",
+      "languageList": [
+        {
+          "key": "None",
+          "value": "None"
+        },
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0318013",
+      "title": "Raktha Sakshi",
+      "originalTitle": "",
+      "fullTitle": "Raktha Sakshi (1982)",
+      "type": "Movie",
+      "year": "1982",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": null,
+      "runtimeMins": null,
+      "runtimeStr": null,
+      "plot": "",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "P. Chandrakumar",
+      "directorList": [
+        {
+          "id": "nm0151524",
+          "name": "P. Chandrakumar"
+        }
+      ],
+      "writers": "T.K. Balachandran",
+      "writerList": [
+        {
+          "id": "nm1901236",
+          "name": "T.K. Balachandran"
+        }
+      ],
+      "stars": "Paravoor Bharathan, Ravi Kumar, Menaka",
+      "starList": [
+        {
+          "id": "nm0080246",
+          "name": "Paravoor Bharathan"
+        },
+        {
+          "id": "nm0474864",
+          "name": "Ravi Kumar"
+        },
+        {
+          "id": "nm0579445",
+          "name": "Menaka"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0080246",
+          "image": "https://imdb-api.com/images/original/MV5BZjljN2IzYjMtNWFkYi00OGNlLThiOWItZDU4OGRmMjBiMzhmXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Paravoor Bharathan",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0474864",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Ravi Kumar",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0579445",
+          "image": "https://imdb-api.com/images/original/MV5BMWJkYWUyNGItMmI3MC00OGQwLTgxOTYtOWNmNGEwZTdmZGZjXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Menaka",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0623427",
+          "image": "https://imdb-api.com/images/original/MV5BZWM2YmYzNGYtZmU5My00NDk3LWE3MmItZTFjY2FlNjVmMTA3XkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Prem Nazir",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0430772",
+          "image": "https://imdb-api.com/images/original/MV5BYzRlMWU2YjktZGMxMC00OGFhLTk1M2UtM2NjMzYyMmU5NjEzXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Jose Prakash",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0781630",
+          "image": "https://imdb-api.com/images/original/MV5BMzAxNGU5MWItMmUxYy00Yjg2LThjZDAtZmY0YmM0YTUyMmVjXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Seema",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0813762",
+          "image": "https://imdb-api.com/images/original/MV5BNjBjZGEzNzUtM2Y4NC00M2RlLWI1MDItYjFmOGFiYmJiZTA2XkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "M.G. Soman",
+          "asCharacter": ""
+        },
+        {
+          "id": "nm0415549",
+          "image": "https://imdb-api.com/images/original/MV5BNGM5NTNjNWUtZTIwZC00YjEyLTgxNWYtYTFjNzFjY2E5MmZiXkEyXkFqcGdeQXVyMjkxNzQ1NDI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Jagathi Sreekumar",
+          "asCharacter": ""
+        }
+      ],
+      "fullCast": null,
+      "genres": "",
+      "genreList": [],
+      "companies": "",
+      "companyList": [],
+      "countries": "India",
+      "countryList": [
+        {
+          "key": "India",
+          "value": "India"
+        }
+      ],
+      "languages": "Malayalam",
+      "languageList": [
+        {
+          "key": "Malayalam",
+          "value": "Malayalam"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt7305638",
+      "title": "Griechenland - oder die Legende des heiligen Trinkers",
+      "originalTitle": "",
+      "fullTitle": "Griechenland - oder die Legende des heiligen Trinkers (2008)",
+      "type": "Movie",
+      "year": "2008",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": "2008-10-24",
+      "runtimeMins": "134",
+      "runtimeStr": "2h 14min",
+      "plot": "",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Andreas Peichl, Sven Offen",
+      "directorList": [
+        {
+          "id": "nm7450834",
+          "name": "Andreas Peichl"
+        },
+        {
+          "id": "nm1407496",
+          "name": "Sven Offen"
+        }
+      ],
+      "writers": "Thomas Stipsits, Thomas Stipsits",
+      "writerList": [
+        {
+          "id": "nm2362721",
+          "name": "Thomas Stipsits"
+        },
+        {
+          "id": "nm7450835",
+          "name": "Thomas Stipsits"
+        }
+      ],
+      "stars": "Thomas Stipsits",
+      "starList": [
+        {
+          "id": "nm2362721",
+          "name": "Thomas Stipsits"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm2362721",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Thomas Stipsits",
+          "asCharacter": "Selfas Self"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Comedy",
+      "genreList": [
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        }
+      ],
+      "companies": "E&A Public Relations, E&A, Just 24/7 Entertainment",
+      "companyList": [
+        {
+          "id": "co0225590",
+          "name": "E&A Public Relations"
+        },
+        {
+          "id": "co0660340",
+          "name": "E&A"
+        },
+        {
+          "id": "co0306549",
+          "name": "Just 24/7 Entertainment"
+        }
+      ],
+      "countries": "Austria",
+      "countryList": [
+        {
+          "key": "Austria",
+          "value": "Austria"
+        }
+      ],
+      "languages": "German",
+      "languageList": [
+        {
+          "key": "German",
+          "value": "German"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "cabaret,greece",
+      "keywordList": [
+        "cabaret",
+        "greece"
+      ],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0109343",
+      "title": "Bryllupsfotografen",
+      "originalTitle": "",
+      "fullTitle": "Bryllupsfotografen (1994)",
+      "type": "Movie",
+      "year": "1994",
+      "image": "https://imdb-api.com/images/original/MV5BMGFlMzk2NjgtYmE1Zi00YjE3LTg0MjMtNWY5NmQwY2IxZTIxXkEyXkFqcGdeQXVyMjUyNDk2ODc@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "1994-09-19",
+      "runtimeMins": "85",
+      "runtimeStr": "1h 25min",
+      "plot": "A documentary film maker returns to his birth town and buys a photo shop, earning money as a wedding photographer, while his life spirals into chaos due to a shallow girlfriend and an old friend with a dangerous project.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Johan Bergenstråhle",
+      "directorList": [
+        {
+          "id": "nm0074091",
+          "name": "Johan Bergenstråhle"
+        }
+      ],
+      "writers": "Johan Bergenstråhle, Dag Solstad",
+      "writerList": [
+        {
+          "id": "nm0074091",
+          "name": "Johan Bergenstråhle"
+        },
+        {
+          "id": "nm0813580",
+          "name": "Dag Solstad"
+        }
+      ],
+      "stars": "Anders Peter Bro, Kadhim Faraj, Annika Johannesen",
+      "starList": [
+        {
+          "id": "nm0110325",
+          "name": "Anders Peter Bro"
+        },
+        {
+          "id": "nm0267056",
+          "name": "Kadhim Faraj"
+        },
+        {
+          "id": "nm0423706",
+          "name": "Annika Johannesen"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0110325",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Anders Peter Bro",
+          "asCharacter": "Maxas Max"
+        },
+        {
+          "id": "nm0267056",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Kadhim Faraj",
+          "asCharacter": "Tarikas Tarik"
+        },
+        {
+          "id": "nm0423706",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Annika Johannesen",
+          "asCharacter": "Pernille Bergas Pernille Berg"
+        },
+        {
+          "id": "nm0506780",
+          "image": "https://imdb-api.com/images/original/MV5BZGJhMjQzYjMtYzJkNC00ZGFkLWEwODEtYjI1NDQ2ZGFmMWI2XkEyXkFqcGdeQXVyMzA0NDE5NTY@._V1_Ratio1.0000_AL_.webp",
+          "name": "Runi Lewerissa",
+          "asCharacter": "Ahmedas Ahmed"
+        },
+        {
+          "id": "nm0563736",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Tove Maës",
+          "asCharacter": "Stine Svareas Stine Svare"
+        },
+        {
+          "id": "nm0709741",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Ilse Rande",
+          "asCharacter": "Vera Bergas Vera Berg"
+        },
+        {
+          "id": "nm0712513",
+          "image": "https://imdb-api.com/images/original/MV5BNzkzMzYwMWMtZjA3MC00ZDIyLWE1OGEtODNiNjM1Y2Y0MTQ0XkEyXkFqcGdeQXVyNjM4Nzk4OTQ@._V1_Ratio1.0000_AL_.webp",
+          "name": "Kurt Ravn",
+          "asCharacter": "Daniel Svareas Daniel Svare"
+        },
+        {
+          "id": "nm0761188",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Nonny Sand",
+          "asCharacter": "Mariaas Maria"
+        },
+        {
+          "id": "nm0804775",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Niels Skousen",
+          "asCharacter": "Christoffer Bergas Christoffer Berg"
+        },
+        {
+          "id": "nm0900842",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Hans Henrik Voetmann",
+          "asCharacter": "Maria's fatheras Maria's father"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Drama, Romance",
+      "genreList": [
+        {
+          "key": "Drama",
+          "value": "Drama"
+        },
+        {
+          "key": "Romance",
+          "value": "Romance"
+        }
+      ],
+      "companies": "Danmarks Radio (DR), Det Danske Filminstitut, MovieMakers",
+      "companyList": [
+        {
+          "id": "co0035146",
+          "name": "Danmarks Radio (DR)"
+        },
+        {
+          "id": "co0048411",
+          "name": "Det Danske Filminstitut"
+        },
+        {
+          "id": "co0064794",
+          "name": "MovieMakers"
+        }
+      ],
+      "countries": "Sweden, Denmark, Norway",
+      "countryList": [
+        {
+          "key": "Sweden",
+          "value": "Sweden"
+        },
+        {
+          "key": "Denmark",
+          "value": "Denmark"
+        },
+        {
+          "key": "Norway",
+          "value": "Norway"
+        }
+      ],
+      "languages": "",
+      "languageList": [],
+      "contentRating": null,
+      "imDbRating": "4.5",
+      "imDbRatingVotes": "37",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "photography,racism,bank robbery",
+      "keywordList": [
+        "photography",
+        "racism",
+        "bank robbery"
+      ],
+      "similars": [
+        {
+          "id": "tt0068755",
+          "title": "Jag heter Stelios",
+          "image": "https://imdb-api.com/images/original/MV5BNjlhZGJmOTEtZjc1Zi00Zjc0LTk0ZTktY2EyMmZlN2Y4OWVhXkEyXkFqcGdeQXVyNzQxNDExNTU@._V1_Ratio0.7150_AL_.webp",
+          "imDbRating": "5.4"
+        },
+        {
+          "id": "tt7740510",
+          "title": "Antlers",
+          "image": "https://imdb-api.com/images/original/MV5BY2UzODAyNjktN2MwYy00M2RkLThiOTEtMjU1MTgxY2EzM2YyXkEyXkFqcGdeQXVyODk5MDA0MDU@._V1_Ratio0.6763_AL_.webp",
+          "imDbRating": "5.9"
+        }
+      ],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt1520379",
+      "title": "Rover's Rangers",
+      "originalTitle": "",
+      "fullTitle": "Rover's Rangers (1943)",
+      "type": "Movie",
+      "year": "1943",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": "1943-05-22",
+      "runtimeMins": "PT10M",
+      "runtimeStr": "PT10M",
+      "plot": "Working dogs in agriculture and the Red Cross.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Larry Lansburgh",
+      "directorList": [
+        {
+          "id": "nm0487047",
+          "name": "Larry Lansburgh"
+        }
+      ],
+      "writers": "",
+      "writerList": [],
+      "stars": "Art Gilmore",
+      "starList": [
+        {
+          "id": "nm0319497",
+          "name": "Art Gilmore"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0319497",
+          "image": "https://imdb-api.com/images/original/MV5BMTQ2OTI4MjI5M15BMl5BanBnXkFtZTgwOTc4OTU2MjE@._V1_Ratio1.3429_AL_.jpg",
+          "name": "Art Gilmore",
+          "asCharacter": "Narratoras Narrator"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Documentary, Short",
+      "genreList": [
+        {
+          "key": "Documentary",
+          "value": "Documentary"
+        },
+        {
+          "key": "Short",
+          "value": "Short"
+        }
+      ],
+      "companies": "Warner Bros.",
+      "companyList": [
+        {
+          "id": "co0002663",
+          "name": "Warner Bros."
+        }
+      ],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": null,
+      "keywords": "year 1943,1940s,20th century,the sports parade series,dog training",
+      "keywordList": [
+        "year 1943",
+        "1940s",
+        "20th century",
+        "the sports parade series",
+        "dog training"
+      ],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt1807015",
+      "title": "Speed Limit",
+      "originalTitle": "",
+      "fullTitle": "Speed Limit (2009)",
+      "type": "Movie",
+      "year": "2009",
+      "image": "https://imdb-api.com/images/original/nopicture.jpg",
+      "releaseDate": "2009-09-10",
+      "runtimeMins": "PT5M",
+      "runtimeStr": "PT5M",
+      "plot": "A short comedy about a young driver, who is pulled over by a police officer for speeding. However, the driver's story is so incredible, it eventually gets him cleared from the speeding charge.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Robert Hanousek",
+      "directorList": [
+        {
+          "id": "nm2616402",
+          "name": "Robert Hanousek"
+        }
+      ],
+      "writers": "",
+      "writerList": [],
+      "stars": "Isai Rivera Blas, Jeffrey Sipke, Neil Whitely",
+      "starList": [
+        {
+          "id": "nm0087636",
+          "name": "Isai Rivera Blas"
+        },
+        {
+          "id": "nm3736607",
+          "name": "Jeffrey Sipke"
+        },
+        {
+          "id": "nm2161194",
+          "name": "Neil Whitely"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0087636",
+          "image": "https://imdb-api.com/images/original/MV5BN2QxMGU0MWMtMGY5My00MjQ2LWIxMTAtYTk5YzJlYTA1YzRjXkEyXkFqcGdeQXVyMDY0NDU3Nw@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Isai Rivera Blas",
+          "asCharacter": "Cop #2as Cop #2"
+        },
+        {
+          "id": "nm3736607",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Jeffrey Sipke",
+          "asCharacter": "Driveras Driver"
+        },
+        {
+          "id": "nm2161194",
+          "image": "https://imdb-api.com/images/original/MV5BZWFlYjA2MjYtNmQ0MC00YzQzLWJjZGYtYjU1MDgwNzZiMGJlXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_Ratio1.7857_AL_.jpg",
+          "name": "Neil Whitely",
+          "asCharacter": "Cop #1as Cop #1"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Short, Comedy",
+      "genreList": [
+        {
+          "key": "Short",
+          "value": "Short"
+        },
+        {
+          "key": "Comedy",
+          "value": "Comedy"
+        }
+      ],
+      "companies": "Excelsior Pictures",
+      "companyList": [
+        {
+          "id": "co0323630",
+          "name": "Excelsior Pictures"
+        }
+      ],
+      "countries": "Canada",
+      "countryList": [
+        {
+          "key": "Canada",
+          "value": "Canada"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": "Driving fast, drunk or not, the cops are not in control.",
+      "keywords": "",
+      "keywordList": [],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt1344779",
+      "title": "Starvation Doctrine: The Plight of Illegal Immigrants in America",
+      "originalTitle": "",
+      "fullTitle": "Starvation Doctrine: The Plight of Illegal Immigrants in America (2008)",
+      "type": "Movie",
+      "year": "2008",
+      "image": "https://imdb-api.com/images/original/MV5BMDBmYzdhYzAtOTk3ZC00YjYxLWI1M2ItZjYyNWY0MmQyNWE3XkEyXkFqcGdeQXVyMjAzMzU0Njc@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": "2008-11-07",
+      "runtimeMins": "PT55M",
+      "runtimeStr": "PT55M",
+      "plot": "This documentary looks at immigration away from the borders and focuses on a new law that recently passed in Oklahoma in 2007. It aims to \"starve\" illegal immigrants by denying them access to medical benefits, state IDs, and jobs. These new policies are profoundly affecting the lives of undocumented immigrants as well as those who associate with them. The film explores why people decide to leave their homelands to find prosperity in the U.S., and what lawmakers feel should be done about those who disregard the law. Finally, the complexity of immigration reform is reveled, highlighting the ways in which immigrants continue to change the demographics of America and the sentiments of many of its citizens.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Zac Davis",
+      "directorList": [
+        {
+          "id": "nm2073004",
+          "name": "Zac Davis"
+        }
+      ],
+      "writers": "Zac Davis, Michael Searcy",
+      "writerList": [
+        {
+          "id": "nm2073004",
+          "name": "Zac Davis"
+        },
+        {
+          "id": "nm0971217",
+          "name": "Michael Searcy"
+        }
+      ],
+      "stars": "",
+      "starList": [],
+      "actorList": [],
+      "fullCast": null,
+      "genres": "Documentary",
+      "genreList": [
+        {
+          "key": "Documentary",
+          "value": "Documentary"
+        }
+      ],
+      "companies": "Burning Buffalo Films",
+      "companyList": [
+        {
+          "id": "co0257422",
+          "name": "Burning Buffalo Films"
+        }
+      ],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English, Spanish",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        },
+        {
+          "key": "Spanish",
+          "value": "Spanish"
+        }
+      ],
+      "contentRating": null,
+      "imDbRating": null,
+      "imDbRatingVotes": null,
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "$2,000 (estimated)",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": "A new law in Oklahoma targets illegal immigrants, starving them of basic needs and forcing them to make life-changing decisions, ultimately destroying their quest for the American Dream.",
+      "keywords": "immigration,state legislature,illegal immigration",
+      "keywordList": [
+        "immigration",
+        "state legislature",
+        "illegal immigration"
+      ],
+      "similars": [],
+      "tvSeriesInfo": null,
+      "tvEpisodeInfo": null,
+      "errorMessage": null
+    },
+    {
+      "id": "tt0051536",
+      "title": "Devil's Partner",
+      "originalTitle": "",
+      "fullTitle": "Devil's Partner (1960)",
+      "type": "Movie",
+      "year": "1960",
+      "image": "https://imdb-api.com/images/original/MV5BNDM4ODUwMjctMDA1NC00Njg0LWE3MGQtM2YwNGNjMjA4MWI0L2ltYWdlXkEyXkFqcGdeQXVyMDM0NzcxMQ@@._V1_Ratio0.6751_AL_.jpg",
+      "releaseDate": null,
+      "runtimeMins": "73",
+      "runtimeStr": "1h 13min",
+      "plot": "An old man sells his soul to the devil, and turns into a young man. He then uses witchcraft and black magic to win a woman from his rival.",
+      "plotLocal": "",
+      "plotLocalIsRtl": false,
+      "awards": "",
+      "directors": "Charles R. Rondeau",
+      "directorList": [
+        {
+          "id": "nm0739987",
+          "name": "Charles R. Rondeau"
+        }
+      ],
+      "writers": "Stanley Clements, Laura Jean Mathews",
+      "writerList": [
+        {
+          "id": "nm0166265",
+          "name": "Stanley Clements"
+        },
+        {
+          "id": "nm0558668",
+          "name": "Laura Jean Mathews"
+        }
+      ],
+      "stars": "Edgar Buchanan, Jean Allison, Richard Crane",
+      "starList": [
+        {
+          "id": "nm0118000",
+          "name": "Edgar Buchanan"
+        },
+        {
+          "id": "nm0021446",
+          "name": "Jean Allison"
+        },
+        {
+          "id": "nm0186415",
+          "name": "Richard Crane"
+        }
+      ],
+      "actorList": [
+        {
+          "id": "nm0118000",
+          "image": "https://imdb-api.com/images/original/MV5BMTI2NjY3ODc1MV5BMl5BanBnXkFtZTcwODkxMDU4Mg@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Edgar Buchanan",
+          "asCharacter": "Doc Lucasas Doc Lucas"
+        },
+        {
+          "id": "nm0021446",
+          "image": "https://imdb-api.com/images/original/MV5BMTIyODU1MzcxNl5BMl5BanBnXkFtZTcwNjM2NDMzMQ@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Jean Allison",
+          "asCharacter": "Nell Lucasas Nell Lucas"
+        },
+        {
+          "id": "nm0186415",
+          "image": "https://imdb-api.com/images/original/MV5BOWU1OGVjNjItY2M2OS00OWUxLThlZWItNTVkYzhiMzI0NGNhXkEyXkFqcGdeQXVyMTQxMjk0Mg@@._V1_Ratio1.2286_AL_.jpg",
+          "name": "Richard Crane",
+          "asCharacter": "David Simpsonas David Simpson"
+        },
+        {
+          "id": "nm0137650",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Spencer Carlisle",
+          "asCharacter": "Sheriff Tom Fulleras Sheriff Tom Fuller"
+        },
+        {
+          "id": "nm0288304",
+          "image": "https://imdb-api.com/images/original/MV5BMjM1M2E0Y2ItOGU1NC00OWVkLTliMTUtNjhkOTdlZDYxMjMyXkEyXkFqcGdeQXVyMzI5NDcxNzI@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Byron Foulger",
+          "asCharacter": "Papersas Papers"
+        },
+        {
+          "id": "nm0137393",
+          "image": "https://imdb-api.com/images/original/MV5BNjBmMzQ2MzEtN2NkYi00YmVmLWFmYzAtNzMxOWIwMmY1MTU2XkEyXkFqcGdeQXVyMDMxMjQwMw@@._V1_Ratio1.0143_AL_.jpg",
+          "name": "Claire Carleton",
+          "asCharacter": "Idaas Ida"
+        },
+        {
+          "id": "nm0641223",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Brian O'Hara",
+          "asCharacter": "Harry Matthewsas Harry Matthews"
+        },
+        {
+          "id": "nm0281414",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Harry Fleer",
+          "asCharacter": "John Wintersas John Winters"
+        },
+        {
+          "id": "nm0393628",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Joe Hooker",
+          "asCharacter": "Deputy Joeas Deputy Joe"
+        },
+        {
+          "id": "nm0625343",
+          "image": "https://imdb-api.com/images/original/MV5BMjE4NzQ4NjUzOF5BMl5BanBnXkFtZTcwNDk2NDYxOA@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Ed Nelson",
+          "asCharacter": "Nick Richardsas Nick Richards…"
+        },
+        {
+          "id": "nm0384610",
+          "image": "https://imdb-api.com/images/original/MV5BZWRkM2U4ODQtZWZmNi00YzA1LThiMzgtNjU2NzQzMDQ4NTNlXkEyXkFqcGdeQXVyMDMxMjQwMw@@._V1_Ratio1.0000_AL_.jpg",
+          "name": "Riley Hill",
+          "asCharacter": "Frankas Frank"
+        },
+        {
+          "id": "nm0393622",
+          "image": "https://imdb-api.com/images/original/nopicture.jpg",
+          "name": "Hugh Hooker",
+          "asCharacter": "Mr. Johnsonas Mr. Johnson"
+        }
+      ],
+      "fullCast": null,
+      "genres": "Horror",
+      "genreList": [
+        {
+          "key": "Horror",
+          "value": "Horror"
+        }
+      ],
+      "companies": "Huron Productions Inc.",
+      "companyList": [
+        {
+          "id": "co0057582",
+          "name": "Huron Productions Inc."
+        }
+      ],
+      "countries": "USA",
+      "countryList": [
+        {
+          "key": "USA",
+          "value": "USA"
+        }
+      ],
+      "languages": "English",
+      "languageList": [
+        {
+          "key": "English",
+          "value": "English"
+        }
+      ],
+      "contentRating": "Not Rated",
+      "imDbRating": "5.1",
+      "imDbRatingVotes": "450",
+      "metacriticRating": null,
+      "ratings": null,
+      "wikipedia": null,
+      "posters": null,
+      "images": null,
+      "trailer": null,
+      "boxOffice": {
+        "budget": "",
+        "openingWeekendUSA": "",
+        "grossUSA": "",
+        "cumulativeWorldwideGross": ""
+      },
+      "tagline": "Half man, half beast--he sold his soul for passion!",
+      "keywords": "dog attack,german shepherd,killed by a horse,town drunk,blood sacrifice",
+      "keywordList": [
+        "dog attack",
+        "german shepherd",
+        "killed by a horse",
+        "town drunk",
+        "blood sacrifice"
+      ],
+      "similars": [
+        {
+          "id": "tt0052609",
+          "title": "Beast from Haunted Cave",
+          "image": "https://imdb-api.com/images/original/MV5BNzQxMDkwN2QtYzBlYy00MDllLThiNzEtMWM5ZGMwNzViNmQ1XkEyXkFqcGdeQXVyMTE2NzA0Ng@@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "4.3"
+        },
+        {
+          "id": "tt0075917",
+          "title": "Dead of Night",
+          "image": "https://imdb-api.com/images/original/MV5BMDYzMjBhM2MtODlkZi00ZDIzLThmYjYtZDhjNmIzY2QxZWEzXkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_Ratio0.8792_AL_.jpg",
+          "imDbRating": "6.2"
+        },
+        {
+          "id": "tt0049363",
+          "title": "Indestructible Man",
+          "image": "https://imdb-api.com/images/original/MV5BNzI1NzNmYzEtNjE3Zi00ZThmLWEyMTItYTQ4NzQ1OTkyMjU4XkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "4.3"
+        },
+        {
+          "id": "tt0033787",
+          "title": "King of the Zombies",
+          "image": "https://imdb-api.com/images/original/MV5BNDVkNmI0NTItZDcyNC00MjE4LWFhNWUtOTkyNTU3Y2M4ZWE4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "5.2"
+        },
+        {
+          "id": "tt0071396",
+          "title": "Messiah of Evil",
+          "image": "https://imdb-api.com/images/original/MV5BNWY3MDc1NDAtMWY0Yy00NDNlLTljZjItOWNmZDRmMGVhZmY2XkEyXkFqcGdeQXVyMzU4ODM5Nw@@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "6.4"
+        },
+        {
+          "id": "tt0056056",
+          "title": "Hands of a Stranger",
+          "image": "https://imdb-api.com/images/original/MV5BZDYzOTNiNGYtYTNlYi00NzIwLTlkZDYtZGZjYjYwYzI1ZWZkXkEyXkFqcGdeQXVyMTMxMTY0OTQ@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "5.1"
+        },
+        {
+          "id": "tt0043655",
+          "title": "The Hoodlum",
+          "image": "https://imdb-api.com/images/original/MV5BZWY1ZWZjMGEtYjRlNy00MjNhLWFiODItOTA0ODk1ZjljZGEwXkEyXkFqcGdeQXVyMTQ3Njg3MQ@@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "6.2"
+        },
+        {
+          "id": "tt0047149",
+          "title": "Killers from Space",
+          "image": "https://imdb-api.com/images/original/MV5BMTUyMzU5NTY4NF5BMl5BanBnXkFtZTgwMDg1OTM1MjE@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "3.4"
+        },
+        {
+          "id": "tt0057859",
+          "title": "Monstrosity",
+          "image": "https://imdb-api.com/images/original/MV5BMDliM2I3MTgtNjRiNS00MjE3LThiM2MtNDkxZWFmOGI4ZWE3XkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "2.9"
+        },
+        {
+          "id": "tt0052805",
+          "title": "First Man Into Space",
+          "image": "https://imdb-api.com/images/original/MV5BMGMxMGU0MjktZWIzNC00MWJhLWIyMTItNDkyYzczOTYyYzA3XkEyXkFqcGdeQXVyNjQzNDI3NzY@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "5.4"
+        },
+        {
+          "id": "tt0050201",
+          "title": "Blood of Dracula",
+          "image": "https://imdb-api.com/images/original/MV5BNjRmYTM4OTAtMzk3OS00ODFkLWEzYzUtOWI2ZGFjMTcxZmQxXkEyXkFqcGdeQXVyNjUwMzI2NzU@._V1_Ratio0.6860_AL_.jpg",
+          "imDbRating": "4.5"
+        },
+        {
+          "id": "tt0039800",
+          "title": "Scared to Death",
+          "image": "https://imdb-api.com/images/original/MV5BOWVlMTZhN2EtMmJlMy00OGZiLWExZWUtNTVjMzFiMGY4NTc5XkEyXkFqcGdeQXVyMTQ2MjQyNDc@._V1_Ratio0.6763_AL_.jpg",
+          "imDbRating": "4.0"
+        }
+      ],
+      "tvSeriesInfo": null,
       "tvEpisodeInfo": null,
       "errorMessage": null
     }

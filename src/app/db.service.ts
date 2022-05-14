@@ -91,6 +91,13 @@ export class DbService {
       complete: () => { console.log("post complete"); }
     }
     );
+  }
 
+  delFrom(from: string, id: string){
+    this.http.delete(`${this.dbUrl}/${from}/${id}`).subscribe({
+      error: (e) => { console.log(e); },
+      complete: () => { console.log("post complete"); }
+    }
+    );
   }
 }
