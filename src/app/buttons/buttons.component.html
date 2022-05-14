@@ -1,17 +1,17 @@
 <p>
-  <button mat-fab color="warn" aria-label="no" (click)="noClicked()">
+  <button mat-fab color="primary" aria-label="no" (click)="noClicked()" disabled="{{!bEnabled}}">
     <mat-icon>clear</mat-icon>
   </button>
   &emsp;
-  <button mat-fab color="primary" aria-label="seen" (click)="seenClicked()">
+  <button mat-fab color="primary" aria-label="seen" (click)="seenClicked()" disabled="{{!bEnabled}}">
     <mat-icon>visibility</mat-icon>
   </button>
   &emsp;
-  <button mat-fab color="warn" aria-label="favorite" (click)="favClicked()">
+  <button mat-fab color="primary" aria-label="favorite" (click)="favClicked()" disabled="{{!bEnabled}}">
     <mat-icon>favorite</mat-icon>
   </button>
   &emsp;
-  <button mat-fab color="primary" aria-label="watch later" (click)="watchClicked()">
+  <button mat-fab color="" aria-label="watch later" (click)="watchClicked()" disabled="{{!bEnabled}}">
     <mat-icon>watch_later</mat-icon>
   </button>
 </p>

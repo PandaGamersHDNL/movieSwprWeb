@@ -14,6 +14,7 @@ export class AppSwiperComponent implements OnInit {
   public tvInfo: TvInfo;
   //using these so we don't have to make get calls each time
   public bApi: boolean = false;
+  public btnsEnabled: boolean = true;
   public data: TvInfo[] = [];
   public seen: IdObject[] = [];
   public watch: IdObject[] = [];
@@ -132,8 +133,10 @@ export class AppSwiperComponent implements OnInit {
           break;
       }
     }
-    this.tvInfo = { title: "Loading new movie" }
+    this.btnsEnabled = false;
+    this.tvInfo = { title: "Loading new movie" };
     this.tvInfo = await this.genCheckedInfo();
+    this.btnsEnabled = true;
   }
   //checks db for overlapping ids True = not in db
   async checkOverlap(id: string): Promise<boolean> {

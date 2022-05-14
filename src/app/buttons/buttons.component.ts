@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, Input } from '@angular/core';
 
 
 @Component({
@@ -8,6 +8,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class ButtonsComponent implements OnInit {
   @Output() buttonClicked = new EventEmitter<EventButtons>();
+  @Input() bEnabled: boolean = true
+  @Input("highlight") toHighlight: EventButtons = EventButtons.no; //no is never highlighted
 
   constructor() { }
 
@@ -27,9 +29,17 @@ export class ButtonsComponent implements OnInit {
   watchClicked() {
     this.buttonClicked.emit(EventButtons.watchLater)
   }
+
+  highlight(button: EventButtons){
+    if(this.toHighlight == button) {
+      return "warn"
+    } else {
+      return "primairy"
+    }
+  }
 }
 
-export enum EventButtons{
+export enum EventButtons {
   no,
   seen,
   favorite,
