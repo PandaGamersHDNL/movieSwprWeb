@@ -1,5 +1,5 @@
 .active{
-   color: red !important;
+   color: var(--HighlightColor) !important;
 }
 body {
     background-color: var(--BodyBackground);
