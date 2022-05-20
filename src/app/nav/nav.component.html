@@ -1,10 +1,10 @@
 <header>
-    <nav>
-        <ul>
-            <li><a class="active" href="./">Discover</a></li>
-            <li> <a href="./">seen</a></li>
-            <li> <a href="./ContactMe.html">favorites</a></li>
-            <li id="Projects"><a href="./watch">watch</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]={exact:true}>Discover</a></li>
+      <li> <a routerLink="/seen" routerLinkActive="active">seen</a></li>
+      <li> <a routerLink="/fav" routerLinkActive="active">favorites</a></li>
+      <li><a routerLink="/watch" routerLinkActive="active">watch</a></li>
+    </ul>
+  </nav>
 </header>
