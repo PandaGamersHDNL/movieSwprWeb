@@ -32,4 +32,3 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 - on hover at the pages like seen, show buttons
 - add other pages besides watch later
 - add search function in seen etc
-- add validation to language and genres

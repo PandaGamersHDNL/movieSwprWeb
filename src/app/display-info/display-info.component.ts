@@ -33,4 +33,10 @@ export class DisplayInfoComponent implements OnInit {
   public valContentRating() {
     return this.tvInfo.contentRating ? true : false;
   }
+  public valTagline(){
+    return this.tvInfo.tagline ? true : false;
+  }
+  public valGenres(){
+    return this.tvInfo.genres ? true : false;
+  }
 }

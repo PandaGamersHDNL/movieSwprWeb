@@ -1,7 +1,7 @@
 <img src={{tvInfo.image}} />
 <h1>{{tvInfo | title}}</h1>
-<p>{{tvInfo.tagline}}</p>
-<p><b>genres:</b> {{tvInfo.genres}}</p>
+<p *ngIf="valTagline()">{{tvInfo.tagline}}</p>
+<p *ngIf="valGenres()"><b>genres:</b> {{tvInfo.genres}}</p>
 <p><b>languages:</b> {{tvInfo.languages}}</p>
 <p *ngIf="valPlot()"><b>plot:</b> {{tvInfo.plot}}</p>
 <p>
