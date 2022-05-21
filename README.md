@@ -31,5 +31,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## TODO
 - on hover at the pages like seen, show buttons
 - add other pages besides watch later
-- set active page in nav
 - add search function in seen etc
+- add validation to language and genres
