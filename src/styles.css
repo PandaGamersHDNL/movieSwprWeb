@@ -1,18 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 :root {
-    --fontSize: 32px;
-    font-size: var(--fontSize);
-    box-sizing: border-box;
-    --NavBackground: #7289DA;
-    --HoverColorP: #089EAC;
-    --HoverColorS: #40444B;
-    --Textcolor: white;
-    --HighlightColor: #EF4A25;
-    --BodyBackground: #202225;
-    --BoxBackground: #292B2F;
+  --fontSize: 32px;
+  font-size: var(--fontSize);
+  box-sizing: border-box;
+  --NavBackground: #7289DA;
+  --HoverColorP: #089EAC;
+  --HoverColorS: #40444B;
+  --Textcolor: white;
+  --HighlightColor: #EF4A25;
+  --BodyBackground: #202225;
+  --BoxBackground: #292B2F;
 }
 
-body{
-    background-color: var(--BodyBackground);
+body {
+  background-color: var(--BodyBackground);
 }

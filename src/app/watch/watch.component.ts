@@ -1,3 +1,4 @@
+import { StringMap } from '@angular/compiler/src/compiler_facade_interface';
 import { Component, OnInit } from '@angular/core';
 import { IdObject, TvInfo } from '../app-swiper/app-swiper.component';
 import { DbService } from '../db.service';
@@ -7,10 +8,13 @@ import { DbService } from '../db.service';
   templateUrl: './watch.component.html',
   styleUrls: ['./watch.component.css']
 })
-export class WatchComponent implements OnInit {
+export class WatchComponent /*extends nondiscoverbuttons*/ implements OnInit  {
   public watch: TvInfo[] = [];
+  public allWatch: TvInfo[] = [];
   public data: TvInfo[] = [];
   public watchIds: IdObject[] = [];
+  public displayBtn: Record<string, boolean> = {};
+  public search = "";
   constructor(private db: DbService) { }
 
   async ngOnInit(): Promise<void> {
@@ -23,7 +27,7 @@ export class WatchComponent implements OnInit {
         this.watchIds = v;
       },
       error: (e) => console.error(e),
-      complete: () => this.createWatch()
+      complete: () => this.createAllWatch()
     });
   }
   async onGetData() {
@@ -36,12 +40,34 @@ export class WatchComponent implements OnInit {
     });
 
   }
-  createWatch() {
+  createAllWatch() {
     console.log("create watch");
 
-    const watch = this.watchIds.map(e => this.data.find(v => v.id == e.id))as TvInfo[];
-    console.log(watch);
+    const allWatch = this.watchIds.map(e => this.data.find(v => v.id == e.id)) as TvInfo[];
+    allWatch.forEach(e => this.displayBtn[e.id!] = false)
+    console.log(this.displayBtn);
+    this.allWatch = allWatch;
+    this.watch = allWatch;
+    console.log(allWatch);
 
-    this.watch = watch;
   }
+
+  onSearch() {
+    const temp = this.allWatch.filter( e => {
+      return e.title?.toLowerCase().includes(this.search)
+    });
+    this.watch = temp
+    console.log(this.watch);
+
+  }
+
+  mouseHover(id: string| undefined){
+    this.displayBtn[id!] = true;
+
+  }
+
+  mouseLeave(id: string | undefined){
+    //this.displayBtn[id!] = false;
+  }
+
 }

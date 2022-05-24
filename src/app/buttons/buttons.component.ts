@@ -31,7 +31,7 @@ export class ButtonsComponent implements OnInit {
   }
 
   highlight(button: EventButtons){
-    console.log(button);
+    //console.log(button);
     if(this.toHighlight === button && button != EventButtons.no) {
 
       return "accent"

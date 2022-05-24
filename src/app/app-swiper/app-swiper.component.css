@@ -1,14 +1,15 @@
 img {
-    float: right;
-    height: 400px;
-    width: auto;
-    display: block;
+  float: right;
+  height: 400px;
+  width: auto;
+  display: block;
 }
+
 div {
-    border: 2px solid black;
-    display: block;
-    margin: 1em;
-    padding: 1em;
-    background-color: var(--BoxBackground);
-    color: var(--Textcolor);
+  border: 2px solid black;
+  display: block;
+  margin: 1em;
+  padding: 1em;
+  background-color: var(--BoxBackground);
+  color: var(--Textcolor);
 }

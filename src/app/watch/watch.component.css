@@ -17,7 +17,7 @@ div > h3 {
    align-items: center;
  }
 
- #item {
+ .item {
    border: 1px solid black;
    padding: 1em;
    display: flex;
@@ -29,3 +29,16 @@ div > h3 {
    color: var(--Textcolor);
    text-decoration: none;
  }
+ #search {
+  border: 2px solid black;
+  display: block;
+  margin: 0.2em;
+  padding: .2em;
+  background-color: var(--BoxBackground);
+  color: var(--Textcolor);
+  height: min-content;
+}
+
+#search input{
+  color: var(--Textcolor);
+}

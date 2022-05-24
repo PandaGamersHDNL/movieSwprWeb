@@ -12,6 +12,10 @@ import { WatchComponent } from './watch/watch.component';
 import { DisplayInfoComponent } from './display-info/display-info.component';
 import { InfoDetailsComponent } from './info-details/info-details.component';
 import { TitlePipe } from './title.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
 	declarations: [
@@ -28,10 +32,12 @@ import { TitlePipe } from './title.pipe';
 		BrowserModule,
 		MatButtonModule,
 		MatIconModule,
-		//AppSwiperComponent,
-		//NavComponent,
 		HttpClientModule,
-		AppRoutingModule
+		AppRoutingModule,
+		BrowserAnimationsModule,
+    MatFormFieldModule,
+    FormsModule,
+    MatInputModule
 	],
 	providers: [],
 	bootstrap: [AppComponent]

@@ -1,10 +1,21 @@
 <div>
-  <!--searchbar + sort options?-->
-  <!--small img of movie + title?-->
-<div id="items">
-  <a id="item" *ngFor="let item of watch" href="./details/watch/{{item.id}}">
-    <h3>{{item.title}}</h3>
-    <img src="{{item.image}}" />
-  </a>
-</div>
+  <div id="search">
+    <form>
+      <mat-form-field>
+        <span matPrefix> </span>
+        <input type="tel" matInput placeholder="Search" name="search" [(ngModel)]="search">
+        <button matSuffix mat-button (click)="onSearch()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </form>
+  </div>
+  <div id="items">
+    <a class="item" id="{{item.id}}" *ngFor="let item of watch" href="./details/watch/{{item.id}}"
+      (mouseover)="mouseHover(item.id)" (mouseout)="mouseLeave(item.id)">
+      <h3>{{item.title}}</h3>
+      <img src="{{item.image}}" />
+      <app-buttons *ngIf="displayBtn[item.id!]">buttons</app-buttons>
+    </a>
+  </div>
 </div>
