@@ -13,7 +13,7 @@ export class InfoDetailsComponent implements OnInit {
   public tvInfo: TvInfo = {};
   public id: string | null = null;
   public data: TvInfo[] = [];
-  public btn = EventButtons.watchLater
+  public btn = EventButtons.watch
   @ViewChild("comment")
   commentRef!: ElementRef;
   //send DATA from previous page -> the global data should be there and can't change
@@ -71,10 +71,10 @@ export class InfoDetailsComponent implements OnInit {
           this.db.postFav({ "id": this.tvInfo.id });
           break;
         case EventButtons.seen:
-          this.deleteCategory(EventButtons.watchLater)
+          this.deleteCategory(EventButtons.watch)
           this.db.postSeen({ "id": this.tvInfo.id });
           break;
-        case EventButtons.watchLater:
+        case EventButtons.watch:
           this.db.postWatch(({ "id": this.tvInfo.id }));
           break;
         default:
@@ -95,7 +95,7 @@ function categoryToString(category: EventButtons) {
       return "favorite"
     case EventButtons.seen:
       return "seen"
-    case EventButtons.watchLater:
+    case EventButtons.watch:
       return "watch"
     default:
       return ""
@@ -109,7 +109,7 @@ function stringToCategory(str: string): EventButtons {
     case "seen":
       return EventButtons.seen
     case "watch":
-      return EventButtons.watchLater
+      return EventButtons.watch
     default:
       return EventButtons.no
   }

@@ -107,7 +107,6 @@ export class AppSwiperComponent implements OnInit {
 
   async buttonClicked(button: EventButtons) {
     const info: IdObject = { id: this.tvInfo.id };
-
     if (info.id != undefined) {
       this.tvInfo = { title: "adding to db" };
       switch (button) {
@@ -118,7 +117,7 @@ export class AppSwiperComponent implements OnInit {
           this.seen.push(info);
           break;
         }
-        case EventButtons.watchLater: {
+        case EventButtons.watch: {
           this.db.postWatch(info);
           this.watch.push(info);
           break;
