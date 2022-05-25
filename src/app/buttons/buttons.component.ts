@@ -11,23 +11,15 @@ export class ButtonsComponent implements OnInit {
   @Input() bEnabled: boolean = true
   @Input() toHighlight: EventButtons = EventButtons.no; //no is never highlighted
   public btns = EventButtons ;
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
-  noClicked() {
-    this.buttonClicked.emit(EventButtons.no)
-  }
-
-  favClicked() {
-    this.buttonClicked.emit(EventButtons.favorite)
-  }
-  seenClicked() {
-    this.buttonClicked.emit(EventButtons.seen)
-  }
-  watchClicked() {
-    this.buttonClicked.emit(EventButtons.watchLater)
+  onClick(event: Event, btn: EventButtons){
+    event.stopPropagation();
+    this.buttonClicked.emit(btn);
   }
 
   highlight(button: EventButtons){
@@ -45,5 +37,5 @@ export enum EventButtons {
   no,
   seen,
   favorite,
-  watchLater
+  watch
 }
