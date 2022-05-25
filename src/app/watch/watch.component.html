@@ -11,11 +11,13 @@
     </form>
   </div>
   <div id="items">
-    <a class="item" id="{{item.id}}" *ngFor="let item of watch" href="./details/watch/{{item.id}}"
-      (mouseover)="mouseHover(item.id)" (mouseout)="mouseLeave(item.id)">
-      <h3>{{item.title}}</h3>
-      <img src="{{item.image}}" />
+    <div class="item" *ngFor="let item of watch">
+      <a id="{{item.id}}" href="./details/watch/{{item.id}}" (mouseover)="mouseHover(item.id)"
+        (mouseout)="mouseLeave(item.id)">
+        <h3>{{item.title}}</h3>
+        <img src="{{item.image}}" />
+      </a>
       <app-buttons *ngIf="displayBtn[item.id!]">buttons</app-buttons>
-    </a>
+    </div>
   </div>
 </div>
