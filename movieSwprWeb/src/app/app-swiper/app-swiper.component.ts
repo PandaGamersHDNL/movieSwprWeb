@@ -89,7 +89,8 @@ export class AppSwiperComponent implements OnInit {
 
 
       },
-      error: (e) => console.error(e),
+      error: (e) => {console.warn("api fail error"); this.tvInfo = { title: "db is not active" };
+      },
       complete: () => console.info('complete')
     });
   }
@@ -158,6 +159,7 @@ export class AppSwiperComponent implements OnInit {
     let bNewInfo;
     if (this.bApi) {
       do {
+        this.tvInfo.title = "Loading new movie" ;
         try {
         bNewInfo = false;
         const id = genTitleId()
@@ -172,6 +174,7 @@ export class AppSwiperComponent implements OnInit {
             tvInfo = await this.genCheckedInfoAPI(id);
             bNewInfo = true;
             if (tvInfo.type == "TVEpisode" && tvInfo.id) {
+              this.tvInfo.title = "Loading new movie..." ;
               console.log("post failed for: ", tvInfo.id);
               this.failed.push({ id: tvInfo.id })
               this.db.postFailedId({ id: tvInfo.id });

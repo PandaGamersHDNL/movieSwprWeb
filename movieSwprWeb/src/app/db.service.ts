@@ -2,6 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/internal/Observable';
 import { IdObject, TvInfo } from './app-swiper/app-swiper.component';
+import { EventButtons } from './buttons/buttons.component';
+import { categoryToString } from './info-details/info-details.component';
 
 @Injectable({
   providedIn: 'root'
@@ -93,11 +95,16 @@ export class DbService {
     );
   }
 
-  delFrom(from: string, id: string){
-    this.http.delete(`${this.dbUrl}/${from}/${id}`).subscribe({
+  delFrom(category: EventButtons, id: string){
+    const categoryStr = categoryToString(category);
+    this.http.delete(`${this.dbUrl}/${categoryStr}/${id}`).subscribe({
       error: (e) => { console.log(e); },
       complete: () => { console.log("post complete"); }
     }
     );
+  }
+
+  getFrom(category: EventButtons){
+    return this.http.get<IdObject[]>(`${this.dbUrl}/${categoryToString(category)}`);
   }
 }

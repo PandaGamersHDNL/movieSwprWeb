@@ -1,0 +1,24 @@
+<div>
+  <div id="search">
+    <form>
+      <mat-form-field>
+        <span matPrefix> </span>
+        <input type="text" matInput placeholder="Search" name="search" [(ngModel)]="search">
+        <button matSuffix mat-button (click)="onSearch()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </form>
+    <p *ngIf="!valData()">no results or page still loading</p>
+  </div>
+  <div id="items">
+    <div class="item" *ngFor="let item of display" (mouseenter)="mouseHover(item.id)" (mouseleave)="mouseLeave(item.id)">
+      <app-hover-buttons [toHighlight]=btn (buttonClicked)="buttonClicked($event, item.id)" >buttons</app-hover-buttons>
+      <a id="{{item.id}}" routerLink="/details/watch/{{item.id}}">
+        <h3>{{item.title}}</h3>
+        <img src="{{item.image}}" />
+        <p *ngIf="displayBtn[item.id!]">{{item.plot}}</p>
+      </a>
+    </div>
+  </div>
+</div>

@@ -39,4 +39,7 @@ export class DisplayInfoComponent implements OnInit {
   public valGenres(){
     return this.tvInfo.genres ? true : false;
   }
+  public valLanguage(){
+    return this.tvInfo.languages!.length > 0 ? true : false;
+  }
 }

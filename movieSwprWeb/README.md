@@ -29,5 +29,4 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 ## to dos
-- TODO on hover at the pages like seen, show buttons
-- TODO add other pages besides watch later
+sometimes json-server crashes (https://stackoverflow.com/questions/39322089/node-js-port-3000-already-in-use-but-it-actually-isnt)

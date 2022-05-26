@@ -1,0 +1,17 @@
+<p>
+  <button mat-fab color={{highlight(btns.no)}} aria-label="no" (click)="onClick($event, btns.no)" disabled="{{!bEnabled}}">
+    <mat-icon>clear</mat-icon>
+  </button>
+  &emsp;
+  <button mat-fab color="{{highlight(btns.seen)}}" aria-label="seen" (click)="onClick($event, btns.seen)" disabled="{{!bEnabled}}">
+    <mat-icon>visibility</mat-icon>
+  </button>
+  &emsp;
+  <button mat-fab color="{{highlight(btns.favorite)}}" aria-label="favorite" (click)="onClick($event, btns.favorite)" disabled="{{!bEnabled}}">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  &emsp;
+  <button mat-fab color="{{highlight(btns.watch)}}" aria-label="watch later" (click)="onClick($event, btns.watch)" disabled="{{!bEnabled}}">
+    <mat-icon>watch_later</mat-icon>
+  </button>
+</p>

@@ -3,30 +3,37 @@ import { TvInfo } from '../app-swiper/app-swiper.component';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DbService } from '../db.service';
 import { EventButtons } from '../buttons/buttons.component';
+import { RemoveButtons } from '../watch/watch.component';
 
 @Component({
   selector: 'app-info-details',
   templateUrl: './info-details.component.html',
   styleUrls: ['./info-details.component.css']
 })
-export class InfoDetailsComponent implements OnInit {
+export class InfoDetailsComponent extends RemoveButtons implements OnInit {
   public tvInfo: TvInfo = {};
-  public id: string | null = null;
   public data: TvInfo[] = [];
-  public btn = EventButtons.watch
   @ViewChild("comment")
   commentRef!: ElementRef;
   //send DATA from previous page -> the global data should be there and can't change
-  constructor(private _Activatedroute: ActivatedRoute, private db: DbService, private router: Router) {
-    this.id = this._Activatedroute.snapshot.paramMap.get("id");
-    const from = this._Activatedroute.snapshot.paramMap.get("from");
-    if (from)
-      this.btn = stringToCategory(from);
+  constructor(private _Activatedroute: ActivatedRoute, router: Router, db: DbService) {
+    super(router, db);
 
+    const from = this._Activatedroute.snapshot.paramMap.get("from");
+    if (from){
+      const btn = stringToCategory(from);
+      this.btn =btn
+    }
   }
 
   ngOnInit(): void {
-    this.onGetData()
+    const id = this._Activatedroute.snapshot.paramMap.get("id");
+    console.log(id);
+
+    if (id){
+      this.infoId = id;
+    }
+    this.onGetData();
   }
 
   onGetData() {
@@ -34,16 +41,16 @@ export class InfoDetailsComponent implements OnInit {
       next: (v) => this.data = v,
       error: (e) => console.log(e),
       complete: () => {
-        console.log(this.id);
+        console.log(this.infoId);
         console.log(this.data);
         this.setInfo();
       }
     })
   }
   setInfo() {
-    const info = this.data.find((e) => e.id == this.id)
+    const info = this.data.find((e) => e.id == this.infoId)
     if (info == undefined) {
-      this.tvInfo = { title: "Can't find" + this.id }
+      this.tvInfo = { title: "Can't find" + this.infoId }
     } else {
       this.tvInfo = info;
     }
@@ -58,38 +65,9 @@ export class InfoDetailsComponent implements OnInit {
     else
       this.commentRef.nativeElement.value = "";
   }
-  buttonClicked(button: EventButtons) {
-    if (this.tvInfo.id)
-      switch (button) {
-        case this.btn:
-          this.deleteCategory(this.btn)
-          break;
-        case EventButtons.no:
-          this.deleteCategory(this.btn)
-          break;
-        case EventButtons.favorite:
-          this.db.postFav({ "id": this.tvInfo.id });
-          break;
-        case EventButtons.seen:
-          this.deleteCategory(EventButtons.watch)
-          this.db.postSeen({ "id": this.tvInfo.id });
-          break;
-        case EventButtons.watch:
-          this.db.postWatch(({ "id": this.tvInfo.id }));
-          break;
-        default:
-          break;
-        }
-        this.router.navigateByUrl(categoryToString(this.btn))
-  }
-  deleteCategory(category: EventButtons) {
-    if (this.tvInfo.id) {
-      this.db.delFrom(categoryToString(category), this.tvInfo.id)
-    }
-  }
 }
 
-function categoryToString(category: EventButtons) {
+export function categoryToString(category: EventButtons) {
   switch (category) {
     case EventButtons.favorite:
       return "favorite"
@@ -102,7 +80,7 @@ function categoryToString(category: EventButtons) {
   }
 }
 
-function stringToCategory(str: string): EventButtons {
+export function stringToCategory(str: string): EventButtons {
   switch (str) {
     case "favorite":
       return EventButtons.favorite

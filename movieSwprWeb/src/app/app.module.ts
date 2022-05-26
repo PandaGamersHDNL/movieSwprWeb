@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { HoverButtonsComponent } from './hover-buttons/hover-buttons.component';
 
 @NgModule({
 	declarations: [
@@ -27,6 +28,7 @@ import { MatInputModule } from '@angular/material/input';
   DisplayInfoComponent,
   InfoDetailsComponent,
   TitlePipe,
+  HoverButtonsComponent,
 	],
 	imports: [
 		BrowserModule,
