@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { DbService } from '../db.service';
-import { HttpClient, HttpHandler } from '@angular/common/http';
 import { EventButtons } from '../buttons/buttons.component';
-import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-swiper',
@@ -81,7 +79,7 @@ export class AppSwiperComponent implements OnInit {
         const today = new Date();
         today.setTime(today.getTime() + today.getTimezoneOffset() * 60 * 1000)
 
-        if(dateGtrDate(today, day))
+        if (dateGtrDate(today, day))
           this.bApi = true
         else
           alert("the api can not request any more, these are from db (dublicates are possible)")
@@ -89,7 +87,8 @@ export class AppSwiperComponent implements OnInit {
 
 
       },
-      error: (e) => {console.warn("api fail error"); this.tvInfo = { title: "db is not active" };
+      error: (e) => {
+        console.warn("api fail error"); this.tvInfo = { title: "db is not active" };
       },
       complete: () => console.info('complete')
     });
@@ -159,33 +158,33 @@ export class AppSwiperComponent implements OnInit {
     let bNewInfo;
     if (this.bApi) {
       do {
-        this.tvInfo.title = "Loading new movie" ;
+        this.tvInfo.title = "Loading new movie";
         try {
-        bNewInfo = false;
-        const id = genTitleId()
-        if (await this.checkOverlap(id)) {
-          const findTvInfo = (info: TvInfo) => {
-            if (info.id == id)
-              return true;
-            return false;
-          }
-          tvInfo = this.data.find(findTvInfo);
-          if (tvInfo == undefined) {
-            tvInfo = await this.genCheckedInfoAPI(id);
-            bNewInfo = true;
-            if (tvInfo.type == "TVEpisode" && tvInfo.id) {
-              this.tvInfo.title = "Loading new movie..." ;
-              console.log("post failed for: ", tvInfo.id);
-              this.failed.push({ id: tvInfo.id })
-              this.db.postFailedId({ id: tvInfo.id });
-              tvInfo = undefined;
+          bNewInfo = false;
+          const id = genTitleId()
+          if (await this.checkOverlap(id)) {
+            const findTvInfo = (info: TvInfo) => {
+              if (info.id == id)
+                return true;
+              return false;
+            }
+            tvInfo = this.data.find(findTvInfo);
+            if (tvInfo == undefined) {
+              tvInfo = await this.genCheckedInfoAPI(id);
+              bNewInfo = true;
+              if (tvInfo.type == "TVEpisode" && tvInfo.id) {
+                this.tvInfo.title = "Loading new movie...";
+                console.log("post failed for: ", tvInfo.id);
+                this.failed.push({ id: tvInfo.id })
+                this.db.postFailedId({ id: tvInfo.id });
+                tvInfo = undefined;
+              }
             }
           }
+        } catch {
+          tvInfo = this.data[genRandomIndex(this.data.length)]
+          break;
         }
-      } catch {
-        tvInfo = this.data[genRandomIndex(this.data.length)]
-        break;
-      }
       } while (tvInfo == undefined || !tvInfo.title)
     }
     else {
@@ -232,15 +231,15 @@ function genTitleId(): string {
  * @param bigDate
  * @param smalDate
  */
-function dateGtrDate(bigDate: Date , smalDate: Date ) {
-  if(bigDate.getTime() > smalDate.getTime()) {
-    if(bigDate.getFullYear() > smalDate.getFullYear()) {
+function dateGtrDate(bigDate: Date, smalDate: Date) {
+  if (bigDate.getTime() > smalDate.getTime()) {
+    if (bigDate.getFullYear() > smalDate.getFullYear()) {
       return true;
     } else if (bigDate.getFullYear() == smalDate.getFullYear()) {
-      if(bigDate.getMonth() > smalDate.getMonth()){
+      if (bigDate.getMonth() > smalDate.getMonth()) {
         return true;
       } else if (bigDate.getMonth() == smalDate.getMonth()) {
-        if(bigDate.getDate() > smalDate.getDate()){
+        if (bigDate.getDate() > smalDate.getDate()) {
           return true;
         }
       }
